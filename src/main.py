@@ -1,54 +1,55 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions
+from bs4 import BeautifulSoup
 
-from credentials import USERNAME, PASSWORD
-
-
-def login(driver):
-    username_input = driver.find_element(By.ID, "UcAuthentification1_UcLogin1_txtLogin")
-    username_input.send_keys(USERNAME)
-
-    password_input = driver.find_element(
-        By.ID, "UcAuthentification1_UcLogin1_txtPassword"
-    )
-    password_input.send_keys(PASSWORD)
-
-    submit_button = driver.find_element(By.ID, "UcAuthentification1_UcLogin1_btnEntrer")
-    submit_button.click()
-
-
-def switch_to_agenda(driver):
-    driver.execute_script(
-        "window.parent.content.location = '/OpDotnet/commun/Login/aspxtoasp.aspx?url=/Eplug/Agenda/Agenda.asp?IdApplication=190&TypeAcces=Utilisateur&IdLien=649';"
-    )
+from scrapper import scraper
 
 
 def main():
-    driver = webdriver.Firefox()
-    driver.get("https://esaip.alcuin.com/OpDotNet/Noyau/Login.aspx")
+    # agenda = scraper.scrape()
+    # html = agenda.get_attribute("innerHTML")
 
-    login(driver)
-    switch_to_agenda(driver)
+    # with open("results.txt", "x") as file:
+    #     file.write(html)
 
-    WebDriverWait(driver, 10).until(
-        expected_conditions.visibility_of_element_located(
-            (By.CSS_SELECTOR, 'frame[name="content"]')
-        )
-    )
+    with open("results.txt", "r") as html:
+        soup = BeautifulSoup(html, features="html.parser")
 
-    content_frame = driver.find_element(By.CSS_SELECTOR, 'frame[name="content"]')
-    driver.switch_to.frame(content_frame)
+        tbody = soup.select_one("tbody")
 
-    driver.get_screenshot_as_file("temp.png")
+        rows = tbody.findChildren("tr", recursive=False)
+        weeks = rows[2:]
 
+        for week in weeks:
+            cells = week.findChildren("td", recursive=False)
+            days = cells[2:]
 
-# agenda = driver.find_element(
-#     By.CSS_SELECTOR,
-#     "#DivVis > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > table:nth-child(1)",
-# )
-# print(agenda)
+            for day in days:
+                tables = day.findChildren("table", recursive=False)
+
+                date_table = tables[0]
+                courses_tables = tables[1:]
+
+                date = int(date_table.get_text().strip())
+
+                for course_table in courses_tables:
+                    print(course_table)
+                    break
+
+                    # TODO : Parse the table to retrieve the course informations.
+
+            break
+
+        break
+
+        # for week in weeks:
+        #     print(week.name)
+
+        # for week in weeks:
+        #     cells = week.find_all("td")
+        #     days = cells[1:]
+
+        #     print(cells)
+
+        #     break
 
 
 if __name__ == "__main__":

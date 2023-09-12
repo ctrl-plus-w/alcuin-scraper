@@ -4,7 +4,18 @@ from pathlib import Path
 import pytz
 import os
 
-def scrap_to_ics(title, group, year, month, day, hour, minute, course, organizer):
+
+
+dictionnaire = {'title': 'Présentation du règlement des études', 
+                'start_time': {'hours': 10, 'minutes': 15}, 
+                'end_time': {'hours': 11, 'minutes': 15}, 
+                'professors': ['DJELOUAH Redouane'], 
+                'groups': ['GRE2 FR', 'ING2 EN', 'IR2 FR'], 
+                'location': 'Amphi E', 
+                'date': 28}
+
+
+def scrap_to_ics(title=str, group=str, year=int, month=int, day=int, hour=int, minute=int, course=str, organizer=str):
 
     # Creat calendar object and event object
 
@@ -32,6 +43,7 @@ def scrap_to_ics(title, group, year, month, day, hour, minute, course, organizer
     event['location'] = vText(course) # Pass the class
     event['organizer'] = organizer
 
+    attendee = vCalAddress(group)
     # Add alarm 15min
 
     alarm = Alarm()
@@ -54,3 +66,15 @@ def scrap_to_ics(title, group, year, month, day, hour, minute, course, organizer
     f = open(os.path.join(directory, 'exampl4.ics'), 'wb')
     f.write(cal.to_ical())
     f.close()
+
+#scrap_to_ics(dictionnaire['title'], dictionnaire['groups'], dictionnaire[''])
+
+def get_year_month():
+    year = ""
+    month = ""
+    date = str(datetime.today())
+    parse = date.split("-")
+    year , month = int(parse[0]), int(parse[1]) 
+    return year, month
+
+print(get_year_month())

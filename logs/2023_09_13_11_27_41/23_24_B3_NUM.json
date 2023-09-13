@@ -1,0 +1,1212 @@
+[
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "IONESCU Valeriu"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "C110",
+    "date": 12
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "IONESCU Valeriu"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "C110",
+    "date": 12
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BELTON Carol",
+      "BERECRY C\u00e9cile",
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "Amphi E",
+    "date": 12
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BELTON Carol",
+      "BERECRY C\u00e9cile",
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "Amphi E",
+    "date": 12
+  },
+  {
+    "title": "Pr\u00e9sentation de l'ann\u00e9e et du r\u00e8glement des \u00e9tudes",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "DJELOUAH Redouane",
+      "MOUTYMBO Charles-Alexis",
+      "ROUBERTY Fr\u00e9d\u00e9ric"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "Amphi A",
+    "date": 12
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "LAMY Pascal"
+    ],
+    "groups": [
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "A08",
+    "date": 13
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "LAMY Pascal"
+    ],
+    "groups": [
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "A08",
+    "date": 13
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "ZKIK Karim"
+    ],
+    "groups": [
+      "B3 NUM Gp Cyber",
+      "BA3 NUM Gp Cyber"
+    ],
+    "location": "C014",
+    "date": 13
+  },
+  {
+    "title": "Pr\u00e9sentation du BDS",
+    "start_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 12,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA",
+      "B2 CYBER",
+      "B2 IA",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev",
+      "GRE2 FR",
+      "GRE3",
+      "GRE4 EN",
+      "GRE4 FR",
+      "ING1 EN",
+      "ING1 FR",
+      "ING2 EN",
+      "IR2 FR",
+      "IR3",
+      "IR4 EN",
+      "IR4 FR"
+    ],
+    "location": "Amphi E",
+    "date": 13
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BOUGARRAM Idriss"
+    ],
+    "groups": [
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "C013",
+    "date": 13
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BOUGARRAM Idriss"
+    ],
+    "groups": [
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "C013",
+    "date": 13
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "BOUGARRAM Idriss"
+    ],
+    "groups": [
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "C013",
+    "date": 13
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "LAMY Pascal"
+    ],
+    "groups": [
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E002",
+    "date": 14
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "LAMY Pascal"
+    ],
+    "groups": [
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E002",
+    "date": 14
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "LAMY Pascal"
+    ],
+    "groups": [
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E002",
+    "date": 14
+  },
+  {
+    "title": "TA",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B3 NUM Gp Cyber"
+    ],
+    "location": null,
+    "date": 14
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 NUM Gp Cyber"
+    ],
+    "location": null,
+    "date": 14
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "GUILLOT Laurence"
+    ],
+    "groups": [
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E007",
+    "date": 14
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "GUILLOT Laurence"
+    ],
+    "groups": [
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E007",
+    "date": 14
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "IONESCU Valeriu"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "C110",
+    "date": 15
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "IONESCU Valeriu"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "C110",
+    "date": 15
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 ANG Gp2"
+    ],
+    "location": "E110",
+    "date": 15
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 ANG Gp2"
+    ],
+    "location": "E110",
+    "date": 15
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B3 ANG Gp1"
+    ],
+    "location": "A16",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 ANG Gp2"
+    ],
+    "location": "E110",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B3 ANG Gp1"
+    ],
+    "location": "A16",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 ANG Gp2"
+    ],
+    "location": "E110",
+    "date": 19
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "LEFRANC Elisabeth"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber"
+    ],
+    "location": "E101",
+    "date": 19
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "LAMY Pascal"
+    ],
+    "groups": [
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E002",
+    "date": 20
+  },
+  {
+    "title": "TA",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "B3 NUM Gp Cyber"
+    ],
+    "location": null,
+    "date": 20
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "BA3 NUM Gp Cyber"
+    ],
+    "location": "C013",
+    "date": 20
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "LAMY Pascal"
+    ],
+    "groups": [
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E002",
+    "date": 20
+  },
+  {
+    "title": "TA",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B3 NUM Gp Cyber"
+    ],
+    "location": null,
+    "date": 20
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "BA3 NUM Gp Cyber"
+    ],
+    "location": "C013",
+    "date": 20
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BOUGARRAM Idriss"
+    ],
+    "groups": [
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E100",
+    "date": 20
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BOUGARRAM Idriss"
+    ],
+    "groups": [
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E100",
+    "date": 20
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "BOUGARRAM Idriss"
+    ],
+    "groups": [
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E100",
+    "date": 20
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 ANG Gp2"
+    ],
+    "location": "A05",
+    "date": 22
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 ANG Gp2"
+    ],
+    "location": "A05",
+    "date": 22
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "LAMY Pascal"
+    ],
+    "groups": [
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E002",
+    "date": 26
+  },
+  {
+    "title": "TA",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "B3 NUM Gp Cyber"
+    ],
+    "location": null,
+    "date": 26
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "BA3 NUM Gp Cyber"
+    ],
+    "location": "C004",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "LAMY Pascal"
+    ],
+    "groups": [
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E002",
+    "date": 26
+  },
+  {
+    "title": "TA",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B3 NUM Gp Cyber"
+    ],
+    "location": null,
+    "date": 26
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "BA3 NUM Gp Cyber"
+    ],
+    "location": "C004",
+    "date": 26
+  },
+  {
+    "title": "Pr\u00e9sentation Direction des Partenariats Entreprises et Alumni",
+    "start_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 12,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E007",
+    "date": 26
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B3 ANG Gp1"
+    ],
+    "location": "A06",
+    "date": 26
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B3 ANG Gp1"
+    ],
+    "location": "A06",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "LAMY Pascal"
+    ],
+    "groups": [
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E002",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "LAMY Pascal"
+    ],
+    "groups": [
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E002",
+    "date": 27
+  },
+  {
+    "title": "TA",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "B3 NUM Gp Cyber"
+    ],
+    "location": null,
+    "date": 27
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "BA3 NUM Gp Cyber"
+    ],
+    "location": "E100",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "LAMY Pascal"
+    ],
+    "groups": [
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "E002",
+    "date": 27
+  },
+  {
+    "title": "TA",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B3 NUM Gp Cyber"
+    ],
+    "location": null,
+    "date": 27
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 NUM Gp Cyber"
+    ],
+    "location": null,
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BOUGARRAM Idriss"
+    ],
+    "groups": [
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "C108",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BOUGARRAM Idriss"
+    ],
+    "groups": [
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "C108",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "BOUGARRAM Idriss"
+    ],
+    "groups": [
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "C108",
+    "date": 27
+  },
+  {
+    "title": "WEI",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA",
+      "B1 METI",
+      "B2 CYBER",
+      "B2 IA",
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "GRE2 FR",
+      "GRE3",
+      "GRE4 EN",
+      "GRE4 FR",
+      "ING1 EN",
+      "ING1 FR",
+      "ING2 EN",
+      "IR2 FR",
+      "IR3",
+      "IR4 EN",
+      "IR4 FR"
+    ],
+    "location": null,
+    "date": 29
+  }
+]

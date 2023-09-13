@@ -1,0 +1,369 @@
+[
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "IRA3"
+    ],
+    "location": "C109",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "IRA3"
+    ],
+    "location": "C109",
+    "date": 26
+  },
+  {
+    "title": "Test de positionnement",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "IRA3"
+    ],
+    "location": "C107",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "IRA3"
+    ],
+    "location": "C107",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "IRA3"
+    ],
+    "location": "C107",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "HAMRIOUI Sofiane"
+    ],
+    "groups": [
+      "IRA3"
+    ],
+    "location": "E101",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "HAMRIOUI Sofiane"
+    ],
+    "groups": [
+      "IRA3"
+    ],
+    "location": "E101",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "MARIVAIN Jean-Claude",
+      "MCALLISTER Aileen",
+      "RAIMBAULT Marie"
+    ],
+    "groups": [
+      "GREA3",
+      "IRA3"
+    ],
+    "location": "Amphi E",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "MARIVAIN Jean-Claude",
+      "MCALLISTER Aileen",
+      "RAIMBAULT Marie"
+    ],
+    "groups": [
+      "GREA3",
+      "IRA3"
+    ],
+    "location": "Amphi E",
+    "date": 27
+  },
+  {
+    "title": "Pr\u00e9sentation du r\u00e8glement des \u00e9tudes",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 17,
+      "minutes": 45
+    },
+    "professors": [
+      "BENZEKKI Kamal",
+      "DJELOUAH Redouane",
+      "GERZEAU Alexandre",
+      "ROUBERTY Fr\u00e9d\u00e9ric"
+    ],
+    "groups": [
+      "GREA3",
+      "IRA3"
+    ],
+    "location": "Amphi E",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BOUGARRAM Idriss"
+    ],
+    "groups": [
+      "IRA3"
+    ],
+    "location": "C108",
+    "date": 28
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "BOUGARRAM Idriss"
+    ],
+    "groups": [
+      "IRA3"
+    ],
+    "location": "C108",
+    "date": 28
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "IRA3"
+    ],
+    "location": "C109",
+    "date": 28
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "IRA3"
+    ],
+    "location": "C109",
+    "date": 28
+  },
+  {
+    "title": "Pr\u00e9vention/VSS",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "IRA3",
+      "IRA4",
+      "IRA5"
+    ],
+    "location": "Amphi A",
+    "date": 28
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "IRA3"
+    ],
+    "location": "C109",
+    "date": 29
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "IRA3"
+    ],
+    "location": "C109",
+    "date": 29
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BENZEKKI Kamal",
+      "MELLET (ITII) St\u00e9phane"
+    ],
+    "groups": [
+      "IRA3"
+    ],
+    "location": "C004",
+    "date": 29
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "COUTE Ana\u00efs",
+      "MELLET (ITII) St\u00e9phane"
+    ],
+    "groups": [
+      "IRA3"
+    ],
+    "location": "C004",
+    "date": 29
+  }
+]

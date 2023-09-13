@@ -1,0 +1,367 @@
+[
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "GREA3"
+    ],
+    "location": "C107",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "GREA3"
+    ],
+    "location": "C107",
+    "date": 26
+  },
+  {
+    "title": "Test de positionnement",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "GREA3"
+    ],
+    "location": "Amphi A",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "GREA3"
+    ],
+    "location": "Amphi A",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "GREA3"
+    ],
+    "location": "Amphi A",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "GREA3"
+    ],
+    "location": "C107",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "GREA3"
+    ],
+    "location": "C107",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "MARIVAIN Jean-Claude",
+      "MCALLISTER Aileen",
+      "RAIMBAULT Marie"
+    ],
+    "groups": [
+      "GREA3",
+      "IRA3"
+    ],
+    "location": "Amphi E",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "MARIVAIN Jean-Claude",
+      "MCALLISTER Aileen",
+      "RAIMBAULT Marie"
+    ],
+    "groups": [
+      "GREA3",
+      "IRA3"
+    ],
+    "location": "Amphi E",
+    "date": 27
+  },
+  {
+    "title": "Pr\u00e9sentation du r\u00e8glement des \u00e9tudes",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 17,
+      "minutes": 45
+    },
+    "professors": [
+      "BENZEKKI Kamal",
+      "DJELOUAH Redouane",
+      "GERZEAU Alexandre",
+      "ROUBERTY Fr\u00e9d\u00e9ric"
+    ],
+    "groups": [
+      "GREA3",
+      "IRA3"
+    ],
+    "location": "Amphi E",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "GUILLOT Laurence"
+    ],
+    "groups": [
+      "GREA3"
+    ],
+    "location": "E102",
+    "date": 28
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "GUILLOT Laurence"
+    ],
+    "groups": [
+      "GREA3"
+    ],
+    "location": "E102",
+    "date": 28
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "PHAM Da Cam"
+    ],
+    "groups": [
+      "GREA3"
+    ],
+    "location": "C107",
+    "date": 28
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "PHAM Da Cam"
+    ],
+    "groups": [
+      "GREA3"
+    ],
+    "location": "C107",
+    "date": 28
+  },
+  {
+    "title": "Pr\u00e9vention/VSS",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "DELANOE Priscille"
+    ],
+    "groups": [
+      "GREA3",
+      "GREA4",
+      "GREA5"
+    ],
+    "location": "Amphi E",
+    "date": 28
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "PHAM Da Cam"
+    ],
+    "groups": [
+      "GREA3"
+    ],
+    "location": "C107",
+    "date": 29
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "PHAM Da Cam"
+    ],
+    "groups": [
+      "GREA3"
+    ],
+    "location": "C107",
+    "date": 29
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "GREA3"
+    ],
+    "location": null,
+    "date": 29
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "GREA3"
+    ],
+    "location": null,
+    "date": 29
+  }
+]

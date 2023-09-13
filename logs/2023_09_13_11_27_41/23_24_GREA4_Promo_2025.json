@@ -1,0 +1,857 @@
+[
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "GERZEAU Alexandre"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C013",
+    "date": 19
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "GERZEAU Alexandre"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C013",
+    "date": 19
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "LIEPERT Dooren"
+    ],
+    "groups": [
+      "INGA4 ALL"
+    ],
+    "location": "C003",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "CORDOVILLA Teresa"
+    ],
+    "groups": [
+      "INGA4 ESP Gp1",
+      "INGA4 ESP Gp2"
+    ],
+    "location": "C108",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 3",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "CORONADO ROQUE Pureza"
+    ],
+    "groups": [
+      "INGA4 ESP Gp3"
+    ],
+    "location": "C201",
+    "date": 19
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "LIEPERT Dooren"
+    ],
+    "groups": [
+      "INGA4 ALL"
+    ],
+    "location": "C003",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "CORDOVILLA Teresa"
+    ],
+    "groups": [
+      "INGA4 ESP Gp1",
+      "INGA4 ESP Gp2"
+    ],
+    "location": "C108",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 3",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "CORONADO ROQUE Pureza"
+    ],
+    "groups": [
+      "INGA4 ESP Gp3"
+    ],
+    "location": "C201",
+    "date": 19
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 12,
+      "minutes": 0
+    },
+    "professors": [
+      "ARFI Jamel"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C202",
+    "date": 20
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "ARFI Jamel"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C202",
+    "date": 20
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "GREA4"
+    ],
+    "location": null,
+    "date": 20
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 12,
+      "minutes": 15
+    },
+    "professors": [
+      "LOMBARDO Corinne"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C106",
+    "date": 21
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "DUNCAN Simon"
+    ],
+    "groups": [
+      "INGA4 ANG Gp1"
+    ],
+    "location": "C003",
+    "date": 21
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "RAIMBAULT Marie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp2"
+    ],
+    "location": "C004",
+    "date": 21
+  },
+  {
+    "title": "Cours Gr 3",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BAINBRIDGE Julie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp3"
+    ],
+    "location": "C013",
+    "date": 21
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "DUNCAN Simon"
+    ],
+    "groups": [
+      "INGA4 ANG Gp1"
+    ],
+    "location": "C003",
+    "date": 21
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "RAIMBAULT Marie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp2"
+    ],
+    "location": "C004",
+    "date": 21
+  },
+  {
+    "title": "Cours Gr 3",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BAINBRIDGE Julie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp3"
+    ],
+    "location": "C013",
+    "date": 21
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "GREA4"
+    ],
+    "location": null,
+    "date": 21
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "HUBERT S\u00e9bastien"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C202",
+    "date": 22
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "HUBERT S\u00e9bastien"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C202",
+    "date": 22
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "VERON Rose-Marie"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C202",
+    "date": 22
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "VERON Rose-Marie"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C202",
+    "date": 22
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "COUTE Ana\u00efs",
+      "MELLET (ITII) St\u00e9phane"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C202",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "COUTE Ana\u00efs",
+      "MELLET (ITII) St\u00e9phane"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C202",
+    "date": 26
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "GREA4"
+    ],
+    "location": null,
+    "date": 26
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "GREA4"
+    ],
+    "location": null,
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "VERON Rose-Marie"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C201",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "VERON Rose-Marie"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C201",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "GERZEAU Alexandre"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C202",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "GERZEAU Alexandre"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C202",
+    "date": 27
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C202",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "GERZEAU Alexandre"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C106",
+    "date": 28
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "GERZEAU Alexandre"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C106",
+    "date": 28
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "DUNCAN Simon"
+    ],
+    "groups": [
+      "INGA4 ANG Gp1"
+    ],
+    "location": "C003",
+    "date": 28
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "RAIMBAULT Marie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp2"
+    ],
+    "location": "C004",
+    "date": 28
+  },
+  {
+    "title": "Cours Gr 3",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BAINBRIDGE Julie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp3"
+    ],
+    "location": "C106",
+    "date": 28
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "DUNCAN Simon"
+    ],
+    "groups": [
+      "INGA4 ANG Gp1"
+    ],
+    "location": "C003",
+    "date": 28
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "RAIMBAULT Marie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp2"
+    ],
+    "location": "C004",
+    "date": 28
+  },
+  {
+    "title": "Cours Gr 3",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BAINBRIDGE Julie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp3"
+    ],
+    "location": "C106",
+    "date": 28
+  },
+  {
+    "title": "Pr\u00e9vention/VSS",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "DELANOE Priscille"
+    ],
+    "groups": [
+      "GREA3",
+      "GREA4",
+      "GREA5"
+    ],
+    "location": "Amphi E",
+    "date": 28
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "SAHRAOUI Emilia"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C108",
+    "date": 29
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "SAHRAOUI Emilia"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C108",
+    "date": 29
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BRIAND Ludovic"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C106",
+    "date": 29
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BRIAND Ludovic"
+    ],
+    "groups": [
+      "GREA4"
+    ],
+    "location": "C106",
+    "date": 29
+  }
+]

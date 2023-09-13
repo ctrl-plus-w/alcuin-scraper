@@ -1,0 +1,1704 @@
+[
+  {
+    "title": "Rencontre ING1",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 17,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "GRE2 FR",
+      "ING1 EN",
+      "ING1 FR",
+      "ING2 EN",
+      "IR2 FR"
+    ],
+    "location": "Amphi A",
+    "date": 5
+  },
+  {
+    "title": "Forum des associations et partenaires",
+    "start_time": {
+      "hours": 14,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 17,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA",
+      "B2 CYBER",
+      "B2 IA",
+      "GRE2 FR",
+      "GRE3",
+      "GRE4 EN",
+      "GRE4 FR",
+      "ING1 EN",
+      "ING1 FR",
+      "ING2 EN",
+      "IR2 FR",
+      "IR3",
+      "IR4 EN",
+      "IR4 FR"
+    ],
+    "location": null,
+    "date": 6
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BOUDEBS Mihaela"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A18",
+    "date": 7
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A15",
+    "date": 7
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BOUDEBS Mihaela"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A08",
+    "date": 8
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A13",
+    "date": 8
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A13",
+    "date": 12
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "CROCHET Mo\u00efse"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A15",
+    "date": 12
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A13",
+    "date": 12
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "TORABI Nathalie"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A18",
+    "date": 12
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 15
+    },
+    "professors": [
+      "MARIVAIN Jean-Claude",
+      "RAIMBAULT Marie",
+      "WILLIAMS Hannah"
+    ],
+    "groups": [
+      "ING1 EN",
+      "ING1 FR"
+    ],
+    "location": "Amphi A",
+    "date": 12
+  },
+  {
+    "title": "TAC Gr 1",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A13",
+    "date": 13
+  },
+  {
+    "title": "TAC Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A05",
+    "date": 13
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "CORONADO ROQUE Pureza",
+      "MORALES Virginia"
+    ],
+    "groups": [
+      "ING1 ESP"
+    ],
+    "location": "Amphi A",
+    "date": 13
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "ING1 ALL"
+    ],
+    "location": "A13",
+    "date": 13
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A13",
+    "date": 13
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A08",
+    "date": 13
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A08",
+    "date": 13
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A13",
+    "date": 13
+  },
+  {
+    "title": "Soutien",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR"
+    ],
+    "location": "A13",
+    "date": 13
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "RIMAUD Anne-Charlotte"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A15",
+    "date": 14
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "TORABI Nathalie"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A18",
+    "date": 14
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "TORABI Nathalie"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A18",
+    "date": 14
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "RIMAUD Anne-Charlotte"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A15",
+    "date": 14
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "C004",
+    "date": 15
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "RIMAUD Anne-Charlotte"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A18",
+    "date": 15
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "RIMAUD Anne-Charlotte"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A18",
+    "date": 15
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "C004",
+    "date": 15
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "RIMAUD Anne-Charlotte"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A18",
+    "date": 15
+  },
+  {
+    "title": "TAC Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A15",
+    "date": 15
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "RIMAUD Anne-Charlotte"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A18",
+    "date": 15
+  },
+  {
+    "title": "TAC Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A15",
+    "date": 15
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A07",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "TORABI Nathalie"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A18",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "TORABI Nathalie"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A07",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A18",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A15",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BOUDEBS Mihaela"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A18",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "WILLIAMS Hannah"
+    ],
+    "groups": [
+      "ING1 ANGLAIS Gp1"
+    ],
+    "location": "E004",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "RAIMBAULT Marie"
+    ],
+    "groups": [
+      "ING1 ANGLAIS Gp2"
+    ],
+    "location": "A13",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 3",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "MARIVAIN Jean-Claude"
+    ],
+    "groups": [
+      "ING1 ANGLAIS Gp3"
+    ],
+    "location": "A15",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A15",
+    "date": 19
+  },
+  {
+    "title": "TAC Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A13",
+    "date": 20
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BOUDEBS Mihaela"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A18",
+    "date": 20
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "MORALES Virginia"
+    ],
+    "groups": [
+      "ING1 ESP Gp1"
+    ],
+    "location": "E102",
+    "date": 20
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "CORONADO ROQUE Pureza"
+    ],
+    "groups": [
+      "ING1 ESP Gp2"
+    ],
+    "location": "A06",
+    "date": 20
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "DOBROSCHKE Stephan"
+    ],
+    "groups": [
+      "ING1 ALL"
+    ],
+    "location": "A13",
+    "date": 20
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A13",
+    "date": 20
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A18",
+    "date": 20
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A18",
+    "date": 20
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A13",
+    "date": 20
+  },
+  {
+    "title": "Soutien",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR"
+    ],
+    "location": "A13",
+    "date": 20
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "RIMAUD Anne-Charlotte"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A13",
+    "date": 21
+  },
+  {
+    "title": "TAC Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A15",
+    "date": 21
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "RIMAUD Anne-Charlotte"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A13",
+    "date": 21
+  },
+  {
+    "title": "TAC Gr 1",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A15",
+    "date": 21
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "CALSO Cosimo"
+    ],
+    "groups": [
+      "ITALIEN"
+    ],
+    "location": "A16",
+    "date": 21
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "CALSO Cosimo"
+    ],
+    "groups": [
+      "ITALIEN"
+    ],
+    "location": "A16",
+    "date": 21
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BOUDEBS Mihaela"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A18",
+    "date": 22
+  },
+  {
+    "title": "TAC Gr 1",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A13",
+    "date": 22
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "BOUDEBS Mihaela"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A18",
+    "date": 22
+  },
+  {
+    "title": "TAC Gr 2",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A13",
+    "date": 22
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "Amphi A",
+    "date": 22
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "GUYON Marc"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A13",
+    "date": 22
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "Amphi A",
+    "date": 22
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "GUYON Marc"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A13",
+    "date": 22
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "RIMAUD Anne-Charlotte"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A13",
+    "date": 26
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "GUYON Marc"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A15",
+    "date": 26
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "TORABI Nathalie"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A18",
+    "date": 26
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "RIMAUD Anne-Charlotte"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A15",
+    "date": 26
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "TORABI Nathalie"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A18",
+    "date": 26
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "GUYON Marc"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A13",
+    "date": 26
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "WILLIAMS Hannah"
+    ],
+    "groups": [
+      "ING1 ANGLAIS Gp1"
+    ],
+    "location": "E004",
+    "date": 26
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "RAIMBAULT Marie"
+    ],
+    "groups": [
+      "ING1 ANGLAIS Gp2"
+    ],
+    "location": "A13",
+    "date": 26
+  },
+  {
+    "title": "Cours Gr 3",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "MARIVAIN Jean-Claude"
+    ],
+    "groups": [
+      "ING1 ANGLAIS Gp3"
+    ],
+    "location": "A15",
+    "date": 26
+  },
+  {
+    "title": "TAC Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "ING1 FR TD2"
+    ],
+    "location": null,
+    "date": 27
+  },
+  {
+    "title": "TAC Gr 1",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "C108",
+    "date": 27
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "MORALES Virginia"
+    ],
+    "groups": [
+      "ING1 ESP Gp1"
+    ],
+    "location": "A05",
+    "date": 27
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "CORONADO ROQUE Pureza"
+    ],
+    "groups": [
+      "ING1 ESP Gp2"
+    ],
+    "location": "A06",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "DOBROSCHKE Stephan"
+    ],
+    "groups": [
+      "ING1 ALL"
+    ],
+    "location": "A16",
+    "date": 27
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A18",
+    "date": 27
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A13",
+    "date": 27
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A13",
+    "date": 27
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A18",
+    "date": 27
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "RIMAUD Anne-Charlotte"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A13",
+    "date": 28
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A15",
+    "date": 28
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "RIMAUD Anne-Charlotte"
+    ],
+    "groups": [
+      "ING1 FR TD1"
+    ],
+    "location": "A15",
+    "date": 28
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "BECHADE Christophe"
+    ],
+    "groups": [
+      "ING1 FR TD2"
+    ],
+    "location": "A13",
+    "date": 28
+  },
+  {
+    "title": "WEI",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA",
+      "B1 METI",
+      "B2 CYBER",
+      "B2 IA",
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "GRE2 FR",
+      "GRE3",
+      "GRE4 EN",
+      "GRE4 FR",
+      "ING1 EN",
+      "ING1 FR",
+      "ING2 EN",
+      "IR2 FR",
+      "IR3",
+      "IR4 EN",
+      "IR4 FR"
+    ],
+    "location": null,
+    "date": 29
+  }
+]

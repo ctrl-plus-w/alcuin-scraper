@@ -1,0 +1,1013 @@
+[
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "HAMRIOUI Sofiane"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "E101",
+    "date": 5
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "HAMRIOUI Sofiane"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "E101",
+    "date": 5
+  },
+  {
+    "title": "Rencontre B1",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 17,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA",
+      "B2 CYBER",
+      "B2 IA"
+    ],
+    "location": "Amphi E",
+    "date": 5
+  },
+  {
+    "title": "Forum des associations et partenaires",
+    "start_time": {
+      "hours": 14,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 17,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA",
+      "B2 CYBER",
+      "B2 IA",
+      "GRE2 FR",
+      "GRE3",
+      "GRE4 EN",
+      "GRE4 FR",
+      "ING1 EN",
+      "ING1 FR",
+      "ING2 EN",
+      "IR2 FR",
+      "IR3",
+      "IR4 EN",
+      "IR4 FR"
+    ],
+    "location": null,
+    "date": 6
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "VAUDELLE Fabrice"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C202",
+    "date": 8
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "VAUDELLE Fabrice"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C202",
+    "date": 8
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "Amphi A",
+    "date": 12
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "Amphi A",
+    "date": 12
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BOUGARRAM Idriss"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "E103",
+    "date": 13
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "BOUGARRAM Idriss"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "E103",
+    "date": 13
+  },
+  {
+    "title": "Pr\u00e9sentation du BDS",
+    "start_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 12,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA",
+      "B2 CYBER",
+      "B2 IA",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev",
+      "GRE2 FR",
+      "GRE3",
+      "GRE4 EN",
+      "GRE4 FR",
+      "ING1 EN",
+      "ING1 FR",
+      "ING2 EN",
+      "IR2 FR",
+      "IR3",
+      "IR4 EN",
+      "IR4 FR"
+    ],
+    "location": "Amphi E",
+    "date": 13
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BELTON Carol",
+      "BERECRY C\u00e9cile"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "Amphi A",
+    "date": 13
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BELTON Carol",
+      "BERECRY C\u00e9cile"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "Amphi A",
+    "date": 13
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "HAMRIOUI Sofiane"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C110",
+    "date": 14
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "HAMRIOUI Sofiane"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C110",
+    "date": 14
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B1 ANG Gp2"
+    ],
+    "location": "A05",
+    "date": 15
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B1 ANG Gp2"
+    ],
+    "location": "A05",
+    "date": 15
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "GUILLOT Laurence"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C201",
+    "date": 15
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "GUILLOT Laurence"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C201",
+    "date": 15
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "VAUDELLE Fabrice"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "A13",
+    "date": 19
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "VAUDELLE Fabrice"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "A13",
+    "date": 19
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "HUBERT Th\u00e9o"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C111",
+    "date": 19
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "HUBERT Th\u00e9o"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C111",
+    "date": 19
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C004",
+    "date": 20
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C004",
+    "date": 20
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BELTON Carol"
+    ],
+    "groups": [
+      "B1 ANG Gp1"
+    ],
+    "location": "A05",
+    "date": 20
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BERECRY C\u00e9cile"
+    ],
+    "groups": [
+      "B1 ANG Gp2"
+    ],
+    "location": "A06",
+    "date": 20
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BELTON Carol"
+    ],
+    "groups": [
+      "B1 ANG Gp1"
+    ],
+    "location": "A05",
+    "date": 20
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BERECRY C\u00e9cile"
+    ],
+    "groups": [
+      "B1 ANG Gp2"
+    ],
+    "location": "A06",
+    "date": 20
+  },
+  {
+    "title": "Pr\u00e9sentation du r\u00e8glement des \u00e9tudes",
+    "start_time": {
+      "hours": 9,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "ROUBERTY Fr\u00e9d\u00e9ric"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "Amphi E",
+    "date": 21
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "DELANOE Priscille"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "E100",
+    "date": 21
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "HAMRIOUI Sofiane"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "E101",
+    "date": 22
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "HAMRIOUI Sofiane"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "E101",
+    "date": 22
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B1 ANG Gp2"
+    ],
+    "location": "C013",
+    "date": 22
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B1 ANG Gp2"
+    ],
+    "location": "C013",
+    "date": 22
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "HUBERT Th\u00e9o"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C104",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "HUBERT Th\u00e9o"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C104",
+    "date": 26
+  },
+  {
+    "title": "Pr\u00e9sentation du r\u00e8glement des \u00e9tudes",
+    "start_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 12,
+      "minutes": 30
+    },
+    "professors": [
+      "DJELOUAH Redouane"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C106",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C202",
+    "date": 26
+  },
+  {
+    "title": "Soutien",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "SAIDDINE Mohamed"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C202",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "HUBERT Th\u00e9o"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C110",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "HUBERT Th\u00e9o"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C110",
+    "date": 27
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BELTON Carol"
+    ],
+    "groups": [
+      "B1 ANG Gp1"
+    ],
+    "location": "A05",
+    "date": 27
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BERECRY C\u00e9cile"
+    ],
+    "groups": [
+      "B1 ANG Gp2"
+    ],
+    "location": "A06",
+    "date": 27
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BELTON Carol"
+    ],
+    "groups": [
+      "B1 ANG Gp1"
+    ],
+    "location": "A05",
+    "date": 27
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BERECRY C\u00e9cile"
+    ],
+    "groups": [
+      "B1 ANG Gp2"
+    ],
+    "location": "A06",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "RESTREPO Juan Pablo"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "C104",
+    "date": 28
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "DELANOE Priscille"
+    ],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA"
+    ],
+    "location": "E100",
+    "date": 28
+  },
+  {
+    "title": "WEI",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B1 CYBER",
+      "B1 IA",
+      "B1 METI",
+      "B2 CYBER",
+      "B2 IA",
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "GRE2 FR",
+      "GRE3",
+      "GRE4 EN",
+      "GRE4 FR",
+      "ING1 EN",
+      "ING1 FR",
+      "ING2 EN",
+      "IR2 FR",
+      "IR3",
+      "IR4 EN",
+      "IR4 FR"
+    ],
+    "location": null,
+    "date": 29
+  }
+]

@@ -1,0 +1,904 @@
+[
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 8,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "professors": [
+      "LOMBARDO Corinne"
+    ],
+    "groups": [
+      "IRA4 Gp1"
+    ],
+    "location": "C003",
+    "date": 19
+  },
+  {
+    "title": "TAC Gr2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "IRA4 Gp2"
+    ],
+    "location": "C004",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 12,
+      "minutes": 15
+    },
+    "professors": [
+      "LOMBARDO Corinne"
+    ],
+    "groups": [
+      "IRA4 Gp2"
+    ],
+    "location": "C003",
+    "date": 19
+  },
+  {
+    "title": "TAC Gr1",
+    "start_time": {
+      "hours": 10,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 12,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "IRA4 Gp1"
+    ],
+    "location": "C004",
+    "date": 19
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "LIEPERT Dooren"
+    ],
+    "groups": [
+      "INGA4 ALL"
+    ],
+    "location": "C003",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "CORDOVILLA Teresa"
+    ],
+    "groups": [
+      "INGA4 ESP Gp1",
+      "INGA4 ESP Gp2"
+    ],
+    "location": "C108",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 3",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "CORONADO ROQUE Pureza"
+    ],
+    "groups": [
+      "INGA4 ESP Gp3"
+    ],
+    "location": "C201",
+    "date": 19
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "LIEPERT Dooren"
+    ],
+    "groups": [
+      "INGA4 ALL"
+    ],
+    "location": "C003",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "CORDOVILLA Teresa"
+    ],
+    "groups": [
+      "INGA4 ESP Gp1",
+      "INGA4 ESP Gp2"
+    ],
+    "location": "C108",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 3",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "CORONADO ROQUE Pureza"
+    ],
+    "groups": [
+      "INGA4 ESP Gp3"
+    ],
+    "location": "C201",
+    "date": 19
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "VAUDELLE Fabrice"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C003",
+    "date": 20
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "VAUDELLE Fabrice"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C003",
+    "date": 20
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "LAMY Pascal"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C104",
+    "date": 20
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "LAMY Pascal"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C104",
+    "date": 20
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "LAMY Pascal"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C104",
+    "date": 20
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "HUBERT M\u00e9lody"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C201",
+    "date": 21
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "HUBERT M\u00e9lody"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C201",
+    "date": 21
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "DUNCAN Simon"
+    ],
+    "groups": [
+      "INGA4 ANG Gp1"
+    ],
+    "location": "C003",
+    "date": 21
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "RAIMBAULT Marie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp2"
+    ],
+    "location": "C004",
+    "date": 21
+  },
+  {
+    "title": "Cours Gr 3",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BAINBRIDGE Julie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp3"
+    ],
+    "location": "C013",
+    "date": 21
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "DUNCAN Simon"
+    ],
+    "groups": [
+      "INGA4 ANG Gp1"
+    ],
+    "location": "C003",
+    "date": 21
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "RAIMBAULT Marie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp2"
+    ],
+    "location": "C004",
+    "date": 21
+  },
+  {
+    "title": "Cours Gr 3",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BAINBRIDGE Julie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp3"
+    ],
+    "location": "C013",
+    "date": 21
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "ADIAVIAKOYE Ladji"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "E101",
+    "date": 21
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "ZKIK Karim"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C104",
+    "date": 22
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "BOUERY Charbel"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "A07",
+    "date": 22
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C003",
+    "date": 22
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C003",
+    "date": 22
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 12,
+      "minutes": 15
+    },
+    "professors": [
+      "LOMBARDO Corinne"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C003",
+    "date": 26
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "E008",
+    "date": 26
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "E007",
+    "date": 26
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C004",
+    "date": 26
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 12,
+      "minutes": 0
+    },
+    "professors": [
+      "ARFI Jamel"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "E110",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "ARFI Jamel"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "E110",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "BOUERY Charbel"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "A18",
+    "date": 27
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "HUBERT M\u00e9lody"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C107",
+    "date": 28
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "HUBERT M\u00e9lody"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C107",
+    "date": 28
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "DUNCAN Simon"
+    ],
+    "groups": [
+      "INGA4 ANG Gp1"
+    ],
+    "location": "C003",
+    "date": 28
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "RAIMBAULT Marie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp2"
+    ],
+    "location": "C004",
+    "date": 28
+  },
+  {
+    "title": "Cours Gr 3",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BAINBRIDGE Julie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp3"
+    ],
+    "location": "C106",
+    "date": 28
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "DUNCAN Simon"
+    ],
+    "groups": [
+      "INGA4 ANG Gp1"
+    ],
+    "location": "C003",
+    "date": 28
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "RAIMBAULT Marie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp2"
+    ],
+    "location": "C004",
+    "date": 28
+  },
+  {
+    "title": "Cours Gr 3",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BAINBRIDGE Julie"
+    ],
+    "groups": [
+      "INGA4 ANG Gp3"
+    ],
+    "location": "C106",
+    "date": 28
+  },
+  {
+    "title": "Pr\u00e9vention/VSS",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "IRA3",
+      "IRA4",
+      "IRA5"
+    ],
+    "location": "Amphi A",
+    "date": 28
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "COUTE Ana\u00efs",
+      "MELLET (ITII) St\u00e9phane"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C201",
+    "date": 29
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "COUTE Ana\u00efs",
+      "MELLET (ITII) St\u00e9phane"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C201",
+    "date": 29
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "VAUDELLE Fabrice"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C202",
+    "date": 29
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "VAUDELLE Fabrice"
+    ],
+    "groups": [
+      "IRA4"
+    ],
+    "location": "C202",
+    "date": 29
+  }
+]

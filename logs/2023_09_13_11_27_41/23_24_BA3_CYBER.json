@@ -1,0 +1,1250 @@
+[
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "IONESCU Valeriu"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "C110",
+    "date": 12
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "IONESCU Valeriu"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "C110",
+    "date": 12
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BELTON Carol",
+      "BERECRY C\u00e9cile",
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "Amphi E",
+    "date": 12
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BELTON Carol",
+      "BERECRY C\u00e9cile",
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "Amphi E",
+    "date": 12
+  },
+  {
+    "title": "Pr\u00e9sentation de l'ann\u00e9e et du r\u00e8glement des \u00e9tudes",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "DJELOUAH Redouane",
+      "MOUTYMBO Charles-Alexis",
+      "ROUBERTY Fr\u00e9d\u00e9ric"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "Amphi A",
+    "date": 12
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "ALBERS Patrick"
+    ],
+    "groups": [
+      "BA3 CYBER"
+    ],
+    "location": "C013",
+    "date": 13
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "FROGER Vincent"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "BA3 CYBER"
+    ],
+    "location": "C013",
+    "date": 13
+  },
+  {
+    "title": "Pr\u00e9sentation Direction des Partenariats Entreprises et Alumni",
+    "start_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 12,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "B3 CYBER",
+      "BA3 CYBER"
+    ],
+    "location": "C013",
+    "date": 13
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 13
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 13
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 13
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "ALBERS Patrick"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "BA3 CYBER"
+    ],
+    "location": "C013",
+    "date": 14
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "ALBERS Patrick"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "BA3 CYBER"
+    ],
+    "location": "C013",
+    "date": 14
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "RIMAUD Anne-Charlotte"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "BA3 CYBER"
+    ],
+    "location": "C202",
+    "date": 14
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "RIMAUD Anne-Charlotte"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "BA3 CYBER"
+    ],
+    "location": "C202",
+    "date": 14
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 14
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "IONESCU Valeriu"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "C110",
+    "date": 15
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "IONESCU Valeriu"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "B3 NUM Gp Dev",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber",
+      "BA3 NUM Gp Dev"
+    ],
+    "location": "C110",
+    "date": 15
+  },
+  {
+    "title": "TAC Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 ANG Gp1"
+    ],
+    "location": null,
+    "date": 15
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 ANG Gp2"
+    ],
+    "location": "E110",
+    "date": 15
+  },
+  {
+    "title": "TAC Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 ANG Gp1"
+    ],
+    "location": null,
+    "date": 15
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 ANG Gp2"
+    ],
+    "location": "E110",
+    "date": 15
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 15
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 19
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "GUILLOT Laurence"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "BA3 CYBER"
+    ],
+    "location": "A15",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B3 ANG Gp1"
+    ],
+    "location": "A16",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 ANG Gp2"
+    ],
+    "location": "E110",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B3 ANG Gp1"
+    ],
+    "location": "A16",
+    "date": 19
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 ANG Gp2"
+    ],
+    "location": "E110",
+    "date": 19
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [
+      "LEFRANC Elisabeth"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "B3 NUM Gp Cyber",
+      "BA3 CYBER",
+      "BA3 NUM Gp Cyber"
+    ],
+    "location": "E101",
+    "date": 19
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 20
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 20
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 20
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 20
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "ALBERS Patrick"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "BA3 CYBER"
+    ],
+    "location": "E002",
+    "date": 21
+  },
+  {
+    "title": "Cours",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "ALBERS Patrick"
+    ],
+    "groups": [
+      "B3 CYBER",
+      "BA3 CYBER"
+    ],
+    "location": "E002",
+    "date": 21
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "BA3 CYBER"
+    ],
+    "location": "A06",
+    "date": 21
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "BA3 CYBER"
+    ],
+    "location": "A06",
+    "date": 21
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "BA3 CYBER"
+    ],
+    "location": "A06",
+    "date": 21
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 ANG Gp2"
+    ],
+    "location": "A05",
+    "date": 22
+  },
+  {
+    "title": "TAC Gr 1",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "BA3 ANG Gp1"
+    ],
+    "location": "A06",
+    "date": 22
+  },
+  {
+    "title": "Cours Gr 2",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [
+      "BLIZHANSKA Maryna"
+    ],
+    "groups": [
+      "B3 ANG Gp2"
+    ],
+    "location": "A05",
+    "date": 22
+  },
+  {
+    "title": "TAC Gr 1",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "BA3 ANG Gp1"
+    ],
+    "location": "A06",
+    "date": 22
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 22
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 22
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 26
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 26
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B3 ANG Gp1"
+    ],
+    "location": "A06",
+    "date": 26
+  },
+  {
+    "title": "TAC Gr 2",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "BA3 ANG Gp2"
+    ],
+    "location": "E102",
+    "date": 26
+  },
+  {
+    "title": "Cours Gr 1",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B3 ANG Gp1"
+    ],
+    "location": "A06",
+    "date": 26
+  },
+  {
+    "title": "TAC Gr 2",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "BA3 ANG Gp2"
+    ],
+    "location": "E102",
+    "date": 26
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 26
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "BA3 CYBER"
+    ],
+    "location": "C013",
+    "date": 27
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "BA3 CYBER"
+    ],
+    "location": "C013",
+    "date": 27
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 27
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 27
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 27
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 28
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 28
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 28
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 28
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 16,
+      "minutes": 45
+    },
+    "end_time": {
+      "hours": 18,
+      "minutes": 15
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 28
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 8,
+      "minutes": 30
+    },
+    "end_time": {
+      "hours": 10,
+      "minutes": 0
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 29
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 10,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 11,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "B04",
+      "BA3 CYBER"
+    ],
+    "location": null,
+    "date": 29
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 13,
+      "minutes": 15
+    },
+    "end_time": {
+      "hours": 14,
+      "minutes": 45
+    },
+    "professors": [],
+    "groups": [
+      "BA3 CYBER"
+    ],
+    "location": "A05",
+    "date": 29
+  },
+  {
+    "title": "TAC",
+    "start_time": {
+      "hours": 15,
+      "minutes": 0
+    },
+    "end_time": {
+      "hours": 16,
+      "minutes": 30
+    },
+    "professors": [],
+    "groups": [
+      "BA3 CYBER"
+    ],
+    "location": "A05",
+    "date": 29
+  }
+]

@@ -11,3 +11,24 @@ To install all the dependencies, you can run the following command :  `python3 -
 ## Run the project
 
 You can run the project with `python3 src/main.py`. (Don't forget to source the environment.)
+
+## Documentation 
+
+The type of the course dictionnary returned by the parser :
+```
+{
+  "title": str,
+  "start_time": {
+    "hours": int,
+    "minutes": int,
+  },
+  "end_time": {
+    "hours": int,
+    "minutes": int,
+  },
+  "professors": str[],
+  "groups": str[],
+  "location": str | None,
+  "date": int,
+}
+```

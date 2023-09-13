@@ -1,55 +1,64 @@
-from bs4 import BeautifulSoup
+from datetime import datetime
 
 from scrapper import scraper
+from parser import parser
+
+from constants.main import PROJECTS
+
+import time
+import json
+import sys
+import re
+import os
+
+
+def slugify(txt):
+    return re.sub("-|:| ", "_", txt)
+
+
+def get_datetime_filename(filename, ext):
+    now = str(datetime.now())
+    dt = slugify(now.split(".")[0])
+    return f"{filename}_{dt}.{ext}"
 
 
 def main():
-    # agenda = scraper.scrape()
-    # html = agenda.get_attribute("innerHTML")
+    now = str(datetime.now())
+    dt = slugify(now.split(".")[0])
 
-    # with open("results.txt", "x") as file:
-    #     file.write(html)
+    directory = f"logs/{dt}"
+    if not os.path.exists(directory):
+        # If it doesn't exist, create it
+        os.makedirs(directory)
 
-    with open("results.txt", "r") as html:
-        soup = BeautifulSoup(html, features="html.parser")
+    driver = scraper.setup_session()
 
-        tbody = soup.select_one("tbody")
+    projects = list(PROJECTS.keys())
 
-        rows = tbody.findChildren("tr", recursive=False)
-        weeks = rows[2:]
+    projects_courses = {}
 
-        for week in weeks:
-            cells = week.findChildren("td", recursive=False)
-            days = cells[2:]
+    for project in projects:
+        start = time.time()
+        agenda = scraper.scrape(driver, project)
+        html = agenda.get_attribute("innerHTML")
+        courses = parser.parse(html)
 
-            for day in days:
-                tables = day.findChildren("table", recursive=False)
+        projects_courses[project] = courses
 
-                date_table = tables[0]
-                courses_tables = tables[1:]
+        msg = f"[DEBUG] Found a total of {len(courses)} courses for the '{project}' project."
+        print(msg)
 
-                date = int(date_table.get_text().strip())
+        filename = slugify(project) + ".json"
 
-                for course_table in courses_tables:
-                    print(course_table)
-                    break
+        with open(f"{directory}/{filename}", "w") as file:
+            file.write(json.dumps(courses, indent=2))
+            end = time.time()
+            duration = end - start
+            print(
+                f"[DEBUG] Save the content of the course into the {filename} file. (Took {duration}s)\n"
+            )
 
-                    # TODO : Parse the table to retrieve the course informations.
-
-            break
-
-        break
-
-        # for week in weeks:
-        #     print(week.name)
-
-        # for week in weeks:
-        #     cells = week.find_all("td")
-        #     days = cells[1:]
-
-        #     print(cells)
-
-        #     break
+    driver.close()
 
 
 if __name__ == "__main__":

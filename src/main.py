@@ -1,9 +1,9 @@
 from datetime import datetime
 
-from scrapper import scraper
-from parser import parser
+from src.scrapper import scraper
+from src.parser import parser
 
-from constants.main import PROJECTS
+from src.constants.main import PROJECTS
 
 import util
 

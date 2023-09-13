@@ -6,8 +6,8 @@ from selenium.webdriver.firefox.options import Options
 
 from time import sleep
 
-from constants.credentials import USERNAME, PASSWORD
-from constants.main import PROJECTS
+from src.constants.credentials import USERNAME, PASSWORD
+from src.constants.main import PROJECTS
 
 
 def login(driver):

@@ -1,12 +1,14 @@
 from datetime import datetime
 
-from src.scrapper import scraper
-from src.parser import parser
+from scrapper import scraper
+from parser import parser
 
-from src.constants.main import PROJECTS
+from constants.main import PROJECTS
 
 import util
 
+import enlighten
+import logging
 import time
 import json
 import sys
@@ -14,21 +16,28 @@ import re
 import os
 
 
-def get_projects_courses():
+def get_projects_courses(logger: logging.Logger):
     # Retrieve the list of all the projects (aka classes) names
     projects = list(PROJECTS.keys())
+
+    # Progress bar
+    setup_pbar_manager = enlighten.get_manager()
+    setup_pbar = setup_pbar_manager.counter(total=7, desc="Setup")
+
+    courses_pbar_manager = enlighten.get_manager()
+    courses_pbar = courses_pbar_manager.counter(total=len(projects), desc="Progress")
 
     # Initialize the directory of the stored logs
     directory = f"logs/{util.slugify(str(datetime.now()).split('.')[0])}"
     util.create_directory(directory)
 
     # Initialize the selenium session (login to alcuin and switch to the agenda tab)
-    driver = scraper.setup_session()
+    driver = scraper.setup_session(setup_pbar)
 
     projects_courses = {}
 
     # Loop through every project
-    for project in projects:
+    for i, project in enumerate(projects):
         start = time.time()
 
         # Scrape the agenda frame, retrieve the html and parse it to get the courses
@@ -38,8 +47,6 @@ def get_projects_courses():
 
         # Map the project name to its courses
         projects_courses[project] = courses
-        msg = f"[DEBUG] Found a total of {len(courses)} courses for the '{project}' project."
-        print(msg)
 
         # Store the retrieved courses into a log folder
         filename = util.slugify(project) + ".json"
@@ -49,15 +56,20 @@ def get_projects_courses():
             end = time.time()
             duration = end - start
 
-            msg = f"[DEBUG] Save the content of the course into the {filename} file. (Took {duration}s)\n"
-            print(msg)
+            logger.info(
+                f"[{project}]({round(duration)}s) Saved the file. Found {len(projects)} projects."
+            )
+            courses_pbar.update()
 
     driver.close()
     return projects_courses
 
 
 def main():
-    projects_courses = get_projects_courses()
+    logging.basicConfig(level=logging.INFO)
+    logger = logging.getLogger()
+
+    projects_courses = get_projects_courses(logger)
 
 
 if __name__ == "__main__":

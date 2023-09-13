@@ -4,6 +4,7 @@ src/constants/credentials.py
 
 bin
 lib
+lib64
 include
 pyvenv.cfg
 

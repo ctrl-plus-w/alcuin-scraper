@@ -1,54 +1,64 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions
+from datetime import datetime
 
-from credentials import USERNAME, PASSWORD
+from scrapper import scraper
+from parser import parser
 
+from constants.main import PROJECTS
 
-def login(driver):
-    username_input = driver.find_element(By.ID, "UcAuthentification1_UcLogin1_txtLogin")
-    username_input.send_keys(USERNAME)
-
-    password_input = driver.find_element(
-        By.ID, "UcAuthentification1_UcLogin1_txtPassword"
-    )
-    password_input.send_keys(PASSWORD)
-
-    submit_button = driver.find_element(By.ID, "UcAuthentification1_UcLogin1_btnEntrer")
-    submit_button.click()
+import time
+import json
+import sys
+import re
+import os
 
 
-def switch_to_agenda(driver):
-    driver.execute_script(
-        "window.parent.content.location = '/OpDotnet/commun/Login/aspxtoasp.aspx?url=/Eplug/Agenda/Agenda.asp?IdApplication=190&TypeAcces=Utilisateur&IdLien=649';"
-    )
+def slugify(txt):
+    return re.sub("-|:| ", "_", txt)
+
+
+def get_datetime_filename(filename, ext):
+    now = str(datetime.now())
+    dt = slugify(now.split(".")[0])
+    return f"{filename}_{dt}.{ext}"
 
 
 def main():
-    driver = webdriver.Firefox()
-    driver.get("https://esaip.alcuin.com/OpDotNet/Noyau/Login.aspx")
+    now = str(datetime.now())
+    dt = slugify(now.split(".")[0])
 
-    login(driver)
-    switch_to_agenda(driver)
+    directory = f"logs/{dt}"
+    if not os.path.exists(directory):
+        # If it doesn't exist, create it
+        os.makedirs(directory)
 
-    WebDriverWait(driver, 10).until(
-        expected_conditions.visibility_of_element_located(
-            (By.CSS_SELECTOR, 'frame[name="content"]')
-        )
-    )
+    driver = scraper.setup_session()
 
-    content_frame = driver.find_element(By.CSS_SELECTOR, 'frame[name="content"]')
-    driver.switch_to.frame(content_frame)
+    projects = list(PROJECTS.keys())
 
-    driver.get_screenshot_as_file("temp.png")
+    projects_courses = {}
 
+    for project in projects:
+        start = time.time()
+        agenda = scraper.scrape(driver, project)
+        html = agenda.get_attribute("innerHTML")
+        courses = parser.parse(html)
 
-# agenda = driver.find_element(
-#     By.CSS_SELECTOR,
-#     "#DivVis > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > table:nth-child(1)",
-# )
-# print(agenda)
+        projects_courses[project] = courses
+
+        msg = f"[DEBUG] Found a total of {len(courses)} courses for the '{project}' project."
+        print(msg)
+
+        filename = slugify(project) + ".json"
+
+        with open(f"{directory}/{filename}", "w") as file:
+            file.write(json.dumps(courses, indent=2))
+            end = time.time()
+            duration = end - start
+            print(
+                f"[DEBUG] Save the content of the course into the {filename} file. (Took {duration}s)\n"
+            )
+
+    driver.close()
 
 
 if __name__ == "__main__":

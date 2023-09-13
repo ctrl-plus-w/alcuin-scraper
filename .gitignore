@@ -1,6 +1,6 @@
 __pycache__
 
-src/credentials.py
+src/constants/credentials.py
 
 bin
 lib
@@ -8,3 +8,5 @@ include
 pyvenv.cfg
 
 geckodriver.log
+
+logs

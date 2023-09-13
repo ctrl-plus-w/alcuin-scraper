@@ -1,7 +1,5 @@
 __pycache__
 
-src/constants/credentials.py
-
 bin
 lib
 lib64
@@ -10,3 +8,4 @@ pyvenv.cfg
 
 geckodriver.log
 
+.env

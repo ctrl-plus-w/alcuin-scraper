@@ -22,7 +22,8 @@ def get_projects_courses(logger: logging.Logger):
 
     # Progress bar
     setup_pbar_manager = enlighten.get_manager()
-    setup_pbar = setup_pbar_manager.counter(total=7, desc="Setup")
+    setup_pbar = setup_pbar_manager.counter(total=8, desc="Setup")
+    setup_pbar.update()
 
     courses_pbar_manager = enlighten.get_manager()
     courses_pbar = courses_pbar_manager.counter(total=len(projects), desc="Progress")
@@ -57,7 +58,7 @@ def get_projects_courses(logger: logging.Logger):
             duration = end - start
 
             logger.info(
-                f"[{project}]({round(duration)}s) Saved the file. Found {len(projects)} projects."
+                f"[{project}]({round(duration)}s) Saved the file. Found {len(courses)} courses."
             )
             courses_pbar.update()
 

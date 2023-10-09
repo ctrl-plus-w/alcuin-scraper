@@ -2,6 +2,7 @@ from datetime import datetime
 
 from scrapper import scraper
 from parser import parser
+from scrap_to_ics import scrap_to_ics
 
 from constants.main import PROJECTS
 
@@ -49,18 +50,24 @@ def get_projects_courses(logger: logging.Logger):
         # Map the project name to its courses
         projects_courses[project] = courses
 
+        calendar = scrap_to_ics.create_events(courses)
+
         # Store the retrieved courses into a log folder
         filename = util.slugify(project) + ".json"
         with open(f"{directory}/{filename}", "w") as file:
             file.write(json.dumps(courses, indent=2))
 
-            end = time.time()
-            duration = end - start
+        filename = util.slugify(project) + ".ics"
+        with open(f"{directory}/{filename}", "wb") as file:
+            file.write(calendar.to_ical())
 
-            logger.info(
-                f"[{project}]({round(duration)}s) Saved the file. Found {len(courses)} courses."
-            )
-            courses_pbar.update()
+        end = time.time()
+        duration = end - start
+
+        logger.info(
+            f"[{project}]({round(duration)}s) Saved the file. Found {len(courses)} courses."
+        )
+        courses_pbar.update()
 
     driver.close()
     return projects_courses

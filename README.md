@@ -6,7 +6,7 @@ This project is running on a [venv](https://docs.python.org/3/library/venv.html)
 
 ## Installation
 
-To install all the dependencies, you can run the following command :  `python3 -m pip install -r requirements.txt`. You also need to setup the credentials with an `.env` file. You just have to copy and rename the `.env.example` to `.env` and replace the values inside quotes with your username and password used on the Alcuin platform.
+To install all the dependencies, you can run the following command :  `python3 -m pip install -r requirements.txt`. You also need to setup the credentials with an `.env` file. You just have to copy and rename the `.env.example` to `.env` and replace the values inside quotes with your username and password used on the Alcuin platform. You also need to provide a Github Token with repositories access and the name of the repository to store the `.ics` files.
 
 ## Run the project
 

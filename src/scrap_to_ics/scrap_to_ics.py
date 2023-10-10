@@ -1,19 +1,10 @@
 from icalendar import Calendar, Event, vCalAddress, vText, Alarm
 from datetime import datetime, timedelta
 from pathlib import Path
+
 import pytz
 import os
 import json
-
-dictionnaire = {
-    "title": "Présentation du règlement des études",
-    "start_time": {"hours": 10, "minutes": 15},
-    "end_time": {"hours": 11, "minutes": 15},
-    "professors": ["DJELOUAH Redouane"],
-    "groups": ["GRE2 FR", "ING2 EN", "IR2 FR"],
-    "location": "Amphi E",
-    "date": 28,
-}
 
 
 def scrap_to_ics(
@@ -45,18 +36,16 @@ def scrap_to_ics(
 
     # Parse for dtstart et dtend
 
-    event.add(
-        "dtstart",
-        datetime(
-            year, month, day, hour_start, minute_start, 0, tzinfo=pytz.timezone("fr")
-        ),
+    start_date = datetime(year, month, day, hour_start, minute_start, 0).astimezone(
+        tz=pytz.timezone("Europe/Paris")
     )
-    event.add(
-        "dtend",
-        datetime(
-            year, month, day, hour_end, minute_end, 0, tzinfo=pytz.country_names("fr")
-        ),
+
+    end_date = datetime(year, month, day, hour_end, minute_end, 0).astimezone(
+        tz=pytz.timezone("Europe/Paris")
     )
+
+    event.add("dtstart", start_date)
+    event.add("dtend", end_date)
 
     # Create organizer object
 
@@ -121,10 +110,3 @@ def create_events(events):
         calendar.add_component(event)
 
     return calendar
-
-
-if __name__ == "__main__":
-    with open("logs/2023_09_13_11_27_41/23_24_B1_CYBER.json") as file:
-        courses = json.load(file)
-
-        create_events(courses)

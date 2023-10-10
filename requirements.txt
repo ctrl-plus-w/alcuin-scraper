@@ -4,3 +4,4 @@ selenium
 bs4
 python-dotenv
 enlighten
+PyGithub

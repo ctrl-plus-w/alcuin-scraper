@@ -3,6 +3,7 @@ from datetime import datetime
 from scrapper import scraper
 from parser import parser
 from scrap_to_ics import scrap_to_ics
+from uploader import upload
 
 from constants.main import PROJECTS
 
@@ -77,7 +78,12 @@ def main():
     logging.basicConfig(level=logging.INFO)
     logger = logging.getLogger()
 
-    projects_courses = get_projects_courses(logger)
+    skip_scrape = len(sys.argv) > 1 and sys.argv[1] == "--skip-scrape"
+
+    if not skip_scrape:
+        get_projects_courses(logger)
+
+    upload.upload_last_calendars(logger)
 
 
 if __name__ == "__main__":

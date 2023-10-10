@@ -34,7 +34,7 @@ def get_course(course_table, date):
         groups = professors
         professors = []
 
-    first_title_part = course_table.get_text().split("-")[0]
+    first_title_part = course_table.get_text().split(";")[0]
     title = re.sub(" +|\n +", " ", first_title_part.strip())
 
     start_str_time, end_str_time = params.pop(0).split("-")

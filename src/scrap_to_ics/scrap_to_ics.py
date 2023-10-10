@@ -48,13 +48,21 @@ def scrap_to_ics(
     event.add(
         "dtstart",
         datetime(
+<<<<<<< HEAD
             year, month, day, hour_start, minute_start, 0, tzinfo=pytz.timezone("fr")
+=======
+            year, month, day, hour_start, minute_start, 0, tzinfo=pytz.timezone("CEST")
+>>>>>>> 501b261df50c03b3d05429737b95105d394c26d7
         ),
     )
     event.add(
         "dtend",
         datetime(
+<<<<<<< HEAD
             year, month, day, hour_end, minute_end, 0, tzinfo=pytz.country_names("fr")
+=======
+            year, month, day, hour_end, minute_end, 0, tzinfo=pytz.timezone("CEST")
+>>>>>>> 501b261df50c03b3d05429737b95105d394c26d7
         ),
     )
 

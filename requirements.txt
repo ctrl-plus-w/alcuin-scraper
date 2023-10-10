@@ -3,3 +3,4 @@ icalendar
 selenium
 bs4
 python-dotenv
+enlighten

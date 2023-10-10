@@ -47,10 +47,15 @@ def scrap_to_ics(
 
     event.add(
         "dtstart",
-        datetime(year, month, day, hour_start, minute_start, 0, tzinfo=pytz.utc),
+        datetime(
+            year, month, day, hour_start, minute_start, 0, tzinfo=pytz.timezone("CEST")
+        ),
     )
     event.add(
-        "dtend", datetime(year, month, day, hour_end, minute_end, 0, tzinfo=pytz.utc)
+        "dtend",
+        datetime(
+            year, month, day, hour_end, minute_end, 0, tzinfo=pytz.timezone("CEST")
+        ),
     )
 
     # Create organizer object

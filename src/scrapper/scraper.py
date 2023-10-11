@@ -2,7 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait, Select
 from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+
+from pyvirtualdisplay import Display
 
 from time import sleep
 
@@ -64,11 +67,21 @@ def get_agenda_table_body(driver):
 
 
 def setup_session(pbar: enlighten.Manager):
-    firefox_options = Options()
+    display = Display(visible=0, size=(800, 600))
+    display.start()
 
-    firefox_options.headless = True
+    opts = Options()
+    servs = Service(executable_path="/usr/bin/chromedriver")
 
-    driver = webdriver.Firefox(options=firefox_options)
+    opts.add_argument("--no-sandbox")
+    opts.add_argument("--headless")
+    opts.add_argument("--disable-gpu")
+    opts.add_argument("--disable-dev-shm-usage")
+    opts.add_argument("--remote-debugging-port=9222")
+
+    opts.headless = True
+
+    driver = webdriver.Chrome(options=opts, service=servs)
     driver.get("https://esaip.alcuin.com/OpDotNet/Noyau/Login.aspx")
     pbar.update()
 
@@ -102,3 +115,4 @@ def scrape(driver, project):
     set_project(driver, project)
 
     return get_agenda_table_body(driver)
+

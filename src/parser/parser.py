@@ -87,7 +87,10 @@ def parse(html):
             date = int(date_table.get_text().strip())
 
             for course_table in courses_tables:
-                course = get_course(course_table, date)
-                courses.append(course)
+                try:
+                    course = get_course(course_table, date)
+                    courses.append(course)
+                except:
+                    continue
 
     return courses

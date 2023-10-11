@@ -76,7 +76,7 @@ def parse(html):
 
     for week in weeks:
         cells = week.findChildren("td", recursive=False)
-        days = cells[2:]
+        days = cells[1:]
 
         for day in days:
             tables = day.findChildren("table", recursive=False)

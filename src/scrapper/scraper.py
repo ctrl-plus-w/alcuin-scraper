@@ -10,6 +10,7 @@ from pyvirtualdisplay import Display
 from time import sleep
 
 import enlighten
+import sys
 
 from constants.credentials import USERNAME, PASSWORD
 from constants.main import PROJECTS
@@ -67,21 +68,32 @@ def get_agenda_table_body(driver):
 
 
 def setup_session(pbar: enlighten.Manager):
-    display = Display(visible=0, size=(800, 600))
-    display.start()
+    dev = len(sys.argv) > 1 and "--dev" in sys.argv
+
+    if not dev:
+        # try:
+        display = Display(visible=0, size=(800, 600))
+        display.start()
+        # except Exception as error:
+        #     if not dev:
+        #         print(error)
 
     opts = Options()
-    servs = Service(executable_path="/usr/bin/chromedriver")
+    servs = Service() if dev else Service(executable_path="/usr/bin/chromedriver")
 
-    opts.add_argument("--no-sandbox")
-    opts.add_argument("--headless")
-    opts.add_argument("--disable-gpu")
-    opts.add_argument("--disable-dev-shm-usage")
-    opts.add_argument("--remote-debugging-port=9222")
+    if not dev:
+        opts.add_argument("--no-sandbox")
+        opts.add_argument("--headless")
+        opts.add_argument("--disable-gpu")
+        opts.add_argument("--disable-dev-shm-usage")
+        opts.add_argument("--remote-debugging-port=9222")
 
-    opts.headless = True
+        opts.headless = True
 
-    driver = webdriver.Chrome(options=opts, service=servs)
+    DriverCore = webdriver.Firefox if dev else webdriver.Chrome
+
+    driver = DriverCore(options=opts, service=servs)
+    driver = webdriver.Firefox(options=opts, service=servs)
     driver.get("https://esaip.alcuin.com/OpDotNet/Noyau/Login.aspx")
     pbar.update()
 
@@ -115,4 +127,3 @@ def scrape(driver, project):
     set_project(driver, project)
 
     return get_agenda_table_body(driver)
-

@@ -71,12 +71,8 @@ def setup_session(pbar: enlighten.Manager):
     dev = len(sys.argv) > 1 and "--dev" in sys.argv
 
     if not dev:
-        # try:
         display = Display(visible=0, size=(800, 600))
         display.start()
-        # except Exception as error:
-        #     if not dev:
-        #         print(error)
 
     opts = Options()
     servs = Service() if dev else Service(executable_path="/usr/bin/chromedriver")

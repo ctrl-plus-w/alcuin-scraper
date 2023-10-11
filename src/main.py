@@ -40,7 +40,7 @@ def get_projects_courses(logger: logging.Logger):
     projects_courses = {}
 
     # Loop through every project
-    for i, project in enumerate(projects[:1]):
+    for i, project in enumerate(projects):
         start = time.time()
 
         # Scrape the agenda frame, retrieve the html and parse it to get the courses

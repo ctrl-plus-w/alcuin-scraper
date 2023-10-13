@@ -36,8 +36,24 @@ def scrap_to_ics(
 
     # Parse for dtstart et dtend
 
-    start_date = datetime(year, month, day, hour_start, minute_start, 0)
-    end_date = datetime(year, month, day, hour_end, minute_end, 0)
+    start_date = datetime(
+        year,
+        month,
+        day,
+        hour_start,
+        minute_start,
+        0,
+        tzinfo=pytz.timezone("Europe/Paris"),
+    )
+    end_date = datetime(
+        year,
+        month,
+        day,
+        hour_end,
+        minute_end,
+        0,
+        tzinfo=pytz.timezone("Europe/Paris"),
+    )
 
     event.add("dtstart", start_date)
     event.add("dtend", end_date)

@@ -14,6 +14,9 @@ def get_last_dir(dirs):
     value = value_of(curr)
 
     for directory in dirs:
+        if "." in directory:
+            continue
+
         if value_of(directory) > value:
             curr = directory
             value = value_of(curr)

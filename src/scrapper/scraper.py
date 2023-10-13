@@ -105,7 +105,7 @@ def setup_session(pbar: enlighten.Manager, logger):
     logger.info("Switching to the agenda...")
     switch_to_agenda(driver)
     pbar.update()
-    sleep(1)
+    sleep(3)
     logger.info("Switching to the content frame...")
     switch_to_content(driver)
     pbar.update()

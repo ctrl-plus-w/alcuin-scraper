@@ -8,15 +8,13 @@ import logging
 
 def get_last_dir(dirs):
     # TODO : Explain why that value_of function (filename comes from the datetime.now() func / used to sort)
+    dirs = list(filter(lambda dir: not "." in dir, dirs))
     value_of = lambda name: int(name.replace("_", ""))
 
     curr = dirs[0]
     value = value_of(curr)
 
     for directory in dirs:
-        if "." in directory:
-            continue
-
         if value_of(directory) > value:
             curr = directory
             value = value_of(curr)

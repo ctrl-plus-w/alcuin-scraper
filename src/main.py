@@ -1,4 +1,5 @@
 from datetime import datetime
+from dateutil import relativedelta
 
 from scrapper import scraper
 from parser import parser
@@ -39,7 +40,12 @@ def get_projects_courses(logger: logging.Logger):
     # Initialize the selenium session (login to alcuin and switch to the agenda tab)
     driver = scraper.setup_session(setup_pbar, logger)
 
-    projects_courses = {}
+    curr_month_projects_courses = {}
+    next_month_projects_courses = {}
+
+    # Initialize the project courses
+    for project in projects:
+        curr_month_projects_courses[project] = []
 
     # Loop through every project (for the current month)
     for project in projects:
@@ -51,7 +57,7 @@ def get_projects_courses(logger: logging.Logger):
         courses = parser.parse(html)
 
         # Map the project name to its courses
-        projects_courses[project] = courses
+        curr_month_projects_courses[project] = courses
 
         end = time.time()
         duration = end - start
@@ -63,7 +69,7 @@ def get_projects_courses(logger: logging.Logger):
 
     scraper.set_next_month(driver)
 
-    # # Loop through every project (for the next month)
+    # Loop through every project (for the next month)
     for project in projects:
         start = time.time()
 
@@ -73,7 +79,7 @@ def get_projects_courses(logger: logging.Logger):
         courses = parser.parse(html)
 
         # Map the project name to its courses
-        projects_courses[project] += courses
+        next_month_projects_courses[project] = courses
 
         end = time.time()
         duration = end - start
@@ -84,12 +90,32 @@ def get_projects_courses(logger: logging.Logger):
         courses_pbar.update()
 
     for project in projects:
-        calendar = scrap_to_ics.create_events(courses)
+        curr_month_courses = curr_month_projects_courses[project]
+        next_month_courses = next_month_projects_courses[project]
+
+        calendar = scrap_to_ics.create_calendar()
+
+        today_date = datetime.today()
+        next_month_date = today_date + relativedelta.relativedelta(months=1)
+
+        for event in scrap_to_ics.create_events(
+            curr_month_courses,
+            scrap_to_ics.get_month(today_date),
+            scrap_to_ics.get_year(today_date),
+        ):
+            calendar.add_component(event)
+
+        for event in scrap_to_ics.create_events(
+            next_month_courses,
+            scrap_to_ics.get_month(next_month_date),
+            scrap_to_ics.get_year(next_month_date),
+        ):
+            calendar.add_component(event)
 
         # Store the retrieved courses into a log folder
         filename = util.slugify(project) + ".json"
         with open(f"{directory}/{filename}", "w") as file:
-            file.write(json.dumps(courses, indent=2))
+            file.write(json.dumps(curr_month_courses, indent=2))
 
         filename = util.slugify(project) + ".ics"
         with open(f"{directory}/{filename}", "wb") as file:
@@ -99,12 +125,12 @@ def get_projects_courses(logger: logging.Logger):
         duration = end - start
 
         logger.info(
-            f"[{project}]({round(duration)}s) Saved the file. Found {len(courses)} courses."
+            f"[{project}]({round(duration)}s) Saved the file. Found {len(curr_month_courses)} courses."
         )
         courses_pbar.update()
 
     driver.close()
-    return projects_courses
+    return curr_month_projects_courses
 
 
 def main():

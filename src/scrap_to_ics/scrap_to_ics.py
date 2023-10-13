@@ -77,17 +77,17 @@ def scrap_to_ics(
     return event
 
 
-def get_year():
+def get_year(date):
     year = ""
-    date = str(datetime.today())
+    date = str(date)
     parse = date.split("-")
     year = int(parse[0])
     return year
 
 
-def get_month():
+def get_month(date):
     month = ""
-    date = str(datetime.today())
+    date = str(date)
     parse = date.split("-")
     month = int(parse[1])
     return month
@@ -98,26 +98,29 @@ def create_calendar():
     cal.add("prodid", "-//Calendrier Esaip//example.com//")
     cal.add("version", "2.0")
 
+    cal.add("X-WR-TIMEZONE", "Europe/Paris")
+
     return cal
 
 
-def create_events(events):
-    calendar = create_calendar()
+def create_events(events, month, year):
+    created_events = []
 
     for dictio in events:
-        event = scrap_to_ics(
-            dictio["title"],
-            dictio["groups"],
-            get_year(),
-            get_month(),
-            dictio["date"],
-            dictio["start_time"]["hours"],
-            dictio["start_time"]["minutes"],
-            dictio["end_time"]["hours"],
-            dictio["end_time"]["minutes"],
-            dictio["location"],
-            dictio["professors"],
+        created_events.append(
+            scrap_to_ics(
+                dictio["title"],
+                dictio["groups"],
+                year,
+                month,
+                dictio["date"],
+                dictio["start_time"]["hours"],
+                dictio["start_time"]["minutes"],
+                dictio["end_time"]["hours"],
+                dictio["end_time"]["minutes"],
+                dictio["location"],
+                dictio["professors"],
+            )
         )
-        calendar.add_component(event)
 
-    return calendar
+    return created_events

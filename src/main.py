@@ -28,19 +28,21 @@ def get_projects_courses(logger: logging.Logger):
     setup_pbar.update()
 
     courses_pbar_manager = enlighten.get_manager()
-    courses_pbar = courses_pbar_manager.counter(total=len(projects), desc="Progress")
+    courses_pbar = courses_pbar_manager.counter(
+        total=(len(projects) * 3), desc="Progress"
+    )
 
     # Initialize the directory of the stored logs
     directory = f"logs/{util.slugify(str(datetime.now()).split('.')[0])}"
     util.create_directory(directory)
 
     # Initialize the selenium session (login to alcuin and switch to the agenda tab)
-    driver = scraper.setup_session(setup_pbar)
+    driver = scraper.setup_session(setup_pbar, logger)
 
     projects_courses = {}
 
-    # Loop through every project
-    for i, project in enumerate(projects):
+    # Loop through every project (for the current month)
+    for project in projects:
         start = time.time()
 
         # Scrape the agenda frame, retrieve the html and parse it to get the courses
@@ -51,6 +53,37 @@ def get_projects_courses(logger: logging.Logger):
         # Map the project name to its courses
         projects_courses[project] = courses
 
+        end = time.time()
+        duration = end - start
+
+        logger.info(
+            f"[{project}]({round(duration)}s) Retrieved the current month courses. Found {len(courses)} courses."
+        )
+        courses_pbar.update()
+
+    scraper.set_next_month(driver)
+
+    # # Loop through every project (for the next month)
+    for project in projects:
+        start = time.time()
+
+        # Scrape the agenda frame, retrieve the html and parse it to get the courses
+        agenda = scraper.scrape(driver, project)
+        html = agenda.get_attribute("innerHTML")
+        courses = parser.parse(html)
+
+        # Map the project name to its courses
+        projects_courses[project] += courses
+
+        end = time.time()
+        duration = end - start
+
+        logger.info(
+            f"[{project}]({round(duration)}s) Retrieved the next month courses. Found {len(courses)} courses."
+        )
+        courses_pbar.update()
+
+    for project in projects:
         calendar = scrap_to_ics.create_events(courses)
 
         # Store the retrieved courses into a log folder
@@ -78,7 +111,7 @@ def main():
     logging.basicConfig(level=logging.INFO)
     logger = logging.getLogger()
 
-    skip_scrape = len(sys.argv) > 1 and sys.argv[1] == "--skip-scrape"
+    skip_scrape = len(sys.argv) > 1 and "--skip-scrape" in sys.argv
 
     if not skip_scrape:
         get_projects_courses(logger)

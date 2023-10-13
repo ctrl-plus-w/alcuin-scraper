@@ -40,6 +40,12 @@ def switch_to_content(driver):
     driver.switch_to.frame(content_frame)
 
 
+def set_next_month(driver):
+    driver.execute_script(
+        "SelDat(document.formul.CurDat,null,'MovDat');SelMoiSui();ChxDat=1;SetSelDat();"
+    )
+
+
 def wait_for_content_to_load(driver):
     WebDriverWait(driver, 60).until(
         expected_conditions.visibility_of_element_located(
@@ -67,7 +73,7 @@ def get_agenda_table_body(driver):
     )
 
 
-def setup_session(pbar: enlighten.Manager):
+def setup_session(pbar: enlighten.Manager, logger):
     dev = len(sys.argv) > 1 and "--dev" in sys.argv
 
     if not dev:
@@ -89,21 +95,27 @@ def setup_session(pbar: enlighten.Manager):
     DriverCore = webdriver.Firefox if dev else webdriver.Chrome
 
     driver = DriverCore(options=opts, service=servs)
-    driver = webdriver.Firefox(options=opts, service=servs)
+    # driver = webdriver.Firefox(options=opts, service=servs)
     driver.get("https://esaip.alcuin.com/OpDotNet/Noyau/Login.aspx")
     pbar.update()
 
     login(driver)
     pbar.update()
     sleep(1)
+    logger.info("Switching to the agenda...")
     switch_to_agenda(driver)
     pbar.update()
+    sleep(1)
+    logger.info("Switching to the content frame...")
     switch_to_content(driver)
     pbar.update()
+    logger.info("Waiting for the content to load...")
     wait_for_content_to_load(driver)
     pbar.update()
+    logger.info("Selecting the month interval...")
     select_interval(driver, "Mois")
     pbar.update()
+    logger.info("Waiting for the content to load...")
     wait_for_content_to_load(driver)
     pbar.update()
     print()

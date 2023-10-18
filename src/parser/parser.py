@@ -31,8 +31,8 @@ def get_course(course_table, date):
             groups.append(param)
 
     if location is None:
-        groups = professors
-        professors = []
+        groups = professors[1:]
+        professors = professors[:1]
 
     first_title_part = course_table.get_text().split(";")[0]
     title = re.sub(" +|\n +", " ", first_title_part.strip())

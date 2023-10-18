@@ -6,3 +6,4 @@ python-dotenv
 enlighten
 PyGithub
 pyvirtualdisplay
+supabase

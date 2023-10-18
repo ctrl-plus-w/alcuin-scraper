@@ -30,7 +30,7 @@ def get_projects_courses(logger: logging.Logger):
 
     courses_pbar_manager = enlighten.get_manager()
     courses_pbar = courses_pbar_manager.counter(
-        total=(len(projects) * 3), desc="Progress"
+        total=(len(projects) * 2), desc="Progress"
     )
 
     # Initialize the directory of the stored logs
@@ -98,24 +98,37 @@ def get_projects_courses(logger: logging.Logger):
         today_date = datetime.today()
         next_month_date = today_date + relativedelta.relativedelta(months=1)
 
+        def set_month_and_year(month, year):
+            def core(event):
+                _event = event.copy()
+                _event["month"] = month
+                _event["year"] = year
+                return _event
+
+            return core
+
+        month = scrap_to_ics.get_month(today_date)
+        year = scrap_to_ics.get_year(today_date)
+
+        for event in scrap_to_ics.create_events(curr_month_courses, month, year):
+            calendar.add_component(event)
+
+        next_month = scrap_to_ics.get_month(next_month_date)
+        next_year = scrap_to_ics.get_year(next_month_date)
+
         for event in scrap_to_ics.create_events(
-            curr_month_courses,
-            scrap_to_ics.get_month(today_date),
-            scrap_to_ics.get_year(today_date),
+            next_month_courses, next_month, next_year
         ):
             calendar.add_component(event)
 
-        for event in scrap_to_ics.create_events(
-            next_month_courses,
-            scrap_to_ics.get_month(next_month_date),
-            scrap_to_ics.get_year(next_month_date),
-        ):
-            calendar.add_component(event)
+        merged_courses = list(
+            map(set_month_and_year(month, year), curr_month_courses)
+        ) + list(map(set_month_and_year(next_month, next_year), next_month_courses))
 
         # Store the retrieved courses into a log folder
         filename = util.slugify(project) + ".json"
         with open(f"{directory}/{filename}", "w") as file:
-            file.write(json.dumps(curr_month_courses, indent=2))
+            file.write(json.dumps(merged_courses, indent=2))
 
         filename = util.slugify(project) + ".ics"
         with open(f"{directory}/{filename}", "wb") as file:
@@ -127,7 +140,6 @@ def get_projects_courses(logger: logging.Logger):
         logger.info(
             f"[{project}]({round(duration)}s) Saved the file. Found {len(curr_month_courses)} courses."
         )
-        courses_pbar.update()
 
     driver.close()
     return curr_month_projects_courses
@@ -142,7 +154,7 @@ def main():
     if not skip_scrape:
         get_projects_courses(logger)
 
-    upload.upload_last_calendars(logger)
+    upload.upload_last_calendar()
 
 
 if __name__ == "__main__":

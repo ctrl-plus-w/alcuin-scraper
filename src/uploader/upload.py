@@ -92,7 +92,7 @@ def get_groups_courses():
                     "description": "",
                     "start_datetime": start_date,
                     "end_datetime": end_date,
-                    "group": util.slugify(group),
+                    "group": calendar.split('.')[0],
                     "professors": json_course["professors"],
                     "location": json_course["location"],
                 }

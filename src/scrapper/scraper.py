@@ -103,7 +103,6 @@ def setup_session(pbar: enlighten.Manager, logger):
     pbar.update()
     sleep(5)
     logger.info("Switching to the agenda...")
-    driver.save_screenshot("temp.png")
     switch_to_agenda(driver)
     pbar.update()
     sleep(5)

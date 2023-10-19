@@ -85,23 +85,22 @@ def get_groups_courses():
                 + "+02"
             )
 
-            for _ in json_course["groups"]:
-                group = calendar.split(".")[0]
+            group = calendar.split(".")[0]
 
-                course = {
-                    "title": json_course["title"],
-                    "description": "",
-                    "start_datetime": start_date,
-                    "end_datetime": end_date,
-                    "group": group,
-                    "professors": json_course["professors"],
-                    "location": json_course["location"],
-                }
+            course = {
+                "title": json_course["title"],
+                "description": "",
+                "start_datetime": start_date,
+                "end_datetime": end_date,
+                "group": group,
+                "professors": json_course["professors"],
+                "location": json_course["location"],
+            }
 
-                if group in group_courses:
-                    group_courses[group].append(course)
-                else:
-                    group_courses[group] = [course]
+            if group in group_courses:
+                group_courses[group].append(course)
+            else:
+                group_courses[group] = [course]
 
     return group_courses
 

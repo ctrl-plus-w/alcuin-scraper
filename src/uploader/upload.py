@@ -37,14 +37,11 @@ def get_uploaded_group_courses(group):
 
 def find_course_index(courses, course):
     for i, _course in enumerate(courses):
-        start_dt_match = _course["start_datetime"].startswith(
-            course["start_datetime"].split("+")[0]
-        )
-
-        end_dt_match = _course["end_datetime"].startswith(
-            course["end_datetime"].split("+")[0]
-        )
-        if start_dt_match and end_dt_match:
+        if util.compare_dates_with_timezone(
+            course["start_datetime"], _course["start_datetime"]
+        ) and util.compare_dates_with_timezone(
+            course["end_datetime"], _course["end_datetime"]
+        ):
             return i
 
     return -1
@@ -78,21 +75,25 @@ def get_groups_courses():
             eth = json_course["end_time"]["hours"]
             etm = json_course["end_time"]["minutes"]
 
-            start_date = datetime(
-                year, month, day, sth, stm, 0, tzinfo=timezone.utc
-            ).strftime("%Y-%m-%dT%H:%M:%S.%f")
+            start_date = (
+                datetime(year, month, day, sth, stm, 0).strftime("%Y-%m-%dT%H:%M:%S.%f")
+                + "+02"
+            )
 
-            end_date = datetime(
-                year, month, day, eth, etm, 0, tzinfo=timezone.utc
-            ).strftime("%Y-%m-%dT%H:%M:%S.%f")
+            end_date = (
+                datetime(year, month, day, eth, etm, 0).strftime("%Y-%m-%dT%H:%M:%S.%f")
+                + "+02"
+            )
 
-            for group in json_course["groups"]:
+            for _ in json_course["groups"]:
+                group = calendar.split(".")[0]
+
                 course = {
                     "title": json_course["title"],
                     "description": "",
                     "start_datetime": start_date,
                     "end_datetime": end_date,
-                    "group": calendar.split('.')[0],
+                    "group": group,
                     "professors": json_course["professors"],
                     "location": json_course["location"],
                 }

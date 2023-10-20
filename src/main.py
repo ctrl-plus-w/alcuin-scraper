@@ -154,7 +154,8 @@ def main():
     if not skip_scrape:
         get_projects_courses(logger)
 
-    upload.upload_last_calendar()
+    upload.upload_supabase_last_calendar()
+    upload.upload_git_last_calendar()
 
 
 if __name__ == "__main__":

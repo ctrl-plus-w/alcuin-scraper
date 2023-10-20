@@ -105,7 +105,7 @@ def get_groups_courses():
     return group_courses
 
 
-def upload_last_calendar():
+def upload_supabase_last_calendar():
     groups_courses = get_groups_courses()
 
     courses_table = supabase_instance.client.table("courses")
@@ -144,3 +144,35 @@ def upload_last_calendar():
         # ==> Courses that don't exists yet / have been modified
         if len(courses) > 0:
             courses_table.insert(courses).execute()
+
+
+def upload_git_last_calendar():
+    basepath = "logs"
+
+    # Retrieve the last dir of scraped pages
+    files = listdir(basepath)
+    last_dir = get_last_dir(files)
+
+    # Get the filenames of the calendars
+    ics_filter = lambda n: n.endswith(".ics")
+    calendars = list(filter(ics_filter, listdir(path.join(basepath, last_dir))))
+
+    # Progress bar
+    upload_pbar_manager = enlighten.get_manager()
+    upload_pbar = upload_pbar_manager.counter(
+        total=len(calendars), desc="Uploading the calendars"
+    )
+    upload_pbar.update()
+
+    for calendar in calendars:
+        calendar_file = open(path.join(basepath, last_dir, calendar))
+        msg = f":computer: Uploading calendar {calendar}"
+        content = calendar_file.read()
+
+        try:
+            uploaded_file = git.repo.get_contents(calendar)
+            git.repo.update_file(calendar, msg, content, sha=uploaded_file.sha)
+        except:
+            git.repo.create_file(calendar, msg, content)
+
+        print(f"[{calendar}] Uploaded the file.")

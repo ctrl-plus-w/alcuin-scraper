@@ -77,12 +77,12 @@ def get_groups_courses():
 
             start_date = (
                 datetime(year, month, day, sth, stm, 0).strftime("%Y-%m-%dT%H:%M:%S.%f")
-                + "+02"
+                + "+02:00"
             )
 
             end_date = (
                 datetime(year, month, day, eth, etm, 0).strftime("%Y-%m-%dT%H:%M:%S.%f")
-                + "+02"
+                + "+02:00"
             )
 
             group = calendar.split(".")[0]

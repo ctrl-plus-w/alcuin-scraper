@@ -19,7 +19,7 @@ import re
 import os
 
 
-def get_projects_courses(logger: logging.Logger):
+def get_projects_courses(directory, logger: logging.Logger):
     # Retrieve the list of all the projects (aka classes) names
     projects = list(PROJECTS.keys())
 
@@ -32,10 +32,6 @@ def get_projects_courses(logger: logging.Logger):
     courses_pbar = courses_pbar_manager.counter(
         total=(len(projects) * 2), desc="Progress"
     )
-
-    # Initialize the directory of the stored logs
-    directory = f"logs/{util.slugify(str(datetime.now()).split('.')[0])}"
-    util.create_directory(directory)
 
     # Initialize the selenium session (login to alcuin and switch to the agenda tab)
     driver = scraper.setup_session(setup_pbar, logger)
@@ -146,16 +142,33 @@ def get_projects_courses(logger: logging.Logger):
 
 
 def main():
+    # Initialize the directory of the stored logs
+    directory = f"logs/{util.slugify(str(datetime.now()).split('.')[0])}"
+    util.create_directory(directory)
+
+    logs_filename = f"{directory}/logs.txt"
+
     logging.basicConfig(level=logging.INFO)
-    logger = logging.getLogger()
+
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+
+    logger = logging.getLogger("mylogger")
+
+    log_file_handler = logging.FileHandler(logs_filename)
+    log_file_handler.setFormatter(formatter)
+
+    logger.addHandler(log_file_handler)
 
     skip_scrape = len(sys.argv) > 1 and "--skip-scrape" in sys.argv
 
-    if not skip_scrape:
-        get_projects_courses(logger)
+    try:
+        if not skip_scrape:
+            get_projects_courses(directory, logger)
 
-    upload.upload_supabase_last_calendar()
-    upload.upload_git_last_calendar()
+        upload.upload_supabase_last_calendar()
+        upload.upload_git_last_calendar()
+    except Exception as e:
+        logger.error(e)
 
 
 if __name__ == "__main__":

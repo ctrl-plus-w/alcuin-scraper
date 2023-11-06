@@ -74,11 +74,17 @@ def get_agenda_table_body(driver):
 
 
 def setup_session(pbar: enlighten.Manager, logger):
+    logger.info("Setting up the session")
     dev = len(sys.argv) > 1 and "--dev" in sys.argv
 
+    """
+    This is sometimes required, might need to create a specific parameter to enable this.
     if not dev:
+        logger.info("Starting the display..")
         display = Display(visible=0, size=(800, 600))
         display.start()
+        logger.info("Started the display")
+    """
 
     opts = Options()
     servs = Service() if dev else Service(executable_path="/usr/bin/chromedriver")
@@ -94,7 +100,9 @@ def setup_session(pbar: enlighten.Manager, logger):
 
     DriverCore = webdriver.Firefox if dev else webdriver.Chrome
 
+    logger.info("About to create the driver")
     driver = DriverCore(options=opts, service=servs)
+    logger.info("Created the driver, about the navigate to the url")
     # driver = webdriver.Firefox(options=opts, service=servs)
     driver.get("https://esaip.alcuin.com/OpDotNet/Noyau/Login.aspx")
     pbar.update()

@@ -47,6 +47,8 @@ class SupabaseUploader:
             # In case there is no course at the same time for the group
             # ==> The uploaded course is not on the calendar anymore
             if matching_course_index == -1:
+                # Enable this condition if you only want to allow setting courses as disabled if they are in the future
+                # if not util.is_in_past(uploaded_course["start_datetime"]):
                 self.table.update({"disabled": True}).eq("id", uuid).execute()
                 continue
 

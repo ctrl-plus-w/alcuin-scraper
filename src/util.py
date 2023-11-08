@@ -26,6 +26,12 @@ def create_directory(directory: str):
         os.makedirs(directory)
 
 
+def is_in_past(date_str: str) -> bool:
+    """Check whether or not the given date corresponding the the string is in the past or not"""
+    date = datetime.fromisoformat(date_str)
+    return date.timestamp() < datetime.now().timestamp()
+
+
 def compare_dates_with_timezone(date_str1: str, date_str2: str):
     """Compare two dates as string with timezone (check if the dates are equals even if the timezones are differents)"""
     # Parse the date strings into datetime objects

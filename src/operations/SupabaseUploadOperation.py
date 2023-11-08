@@ -1,7 +1,5 @@
 # External Libraries
-from supabase import create_client, Client
-
-import os
+from supabase import create_client
 
 # Custom Libraries & Modules
 from classes.SupabaseUploader import SupabaseUploader

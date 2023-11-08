@@ -19,17 +19,23 @@ from constants.main import PROJECTS
 
 import util
 
-projects = list(PROJECTS.keys())
 
-# Logs directory
-logs_directory = f"logs/{util.slugify(str(datetime.now()).split('.')[0])}"
-util.create_directory(logs_directory)
+def main():
+    projects = list(PROJECTS.keys())
 
-# Initialize the logger and the pipe
-logger = Logger("PIPE", f"{logs_directory}/logs.txt")
-pipe = Pipe(logger, logs_directory)
+    # Logs directory
+    logs_directory = f"logs/{util.slugify(str(datetime.now()).split('.')[0])}"
+    util.create_directory(logs_directory)
 
-pipe.add(ScrapeOperation(projects))
-pipe.add(ParseOperation())
-pipe.add(SupabaseUploadOperation())
-pipe.start()
+    # Initialize the logger and the pipe
+    logger = Logger("PIPE", f"{logs_directory}/logs.txt")
+    pipe = Pipe(logger, logs_directory)
+
+    pipe.add(ScrapeOperation(projects))
+    pipe.add(ParseOperation())
+    pipe.add(SupabaseUploadOperation())
+    pipe.start()
+
+
+if __name__ == "__main__":
+    main()

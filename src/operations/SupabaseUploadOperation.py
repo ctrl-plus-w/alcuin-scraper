@@ -9,18 +9,14 @@ from classes.Operation import Operation
 from classes.Course import Course
 from classes.Logger import Logger
 
+from constants.credentials import SUPABASE_URL, SERVICE_ROLE_KEY
+
 import util
 
 
 class SupabaseUploadOperation(Operation):
     def __init__(self):
-        url = os.environ.get("SUPABASE_URL")
-        key = os.environ.get("SERVICE_ROLE_KEY")
-
-        if not url or not key or url == "" or key == "":
-            raise Exception("Missing environment variables.")
-
-        self.supabase = create_client(url, key)
+        self.supabase = create_client(SUPABASE_URL, SERVICE_ROLE_KEY)
 
         super().__init__("SUPABASE-UPLOAD")
 

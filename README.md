@@ -21,21 +21,4 @@ You can run the project with `python3 src/main.py`. (Don't forget to source the 
 
 ## Documentation 
 
-The type of the course dictionnary returned by the parser :
-```
-{
-  "title": str,
-  "start_time": {
-    "hours": int,
-    "minutes": int,
-  },
-  "end_time": {
-    "hours": int,
-    "minutes": int,
-  },
-  "professors": str[],
-  "groups": str[],
-  "location": str | None,
-  "date": int,
-}
-```
+The whole project is runnning under a Pipe design pattern which is composed of multiple operations. Currently, the project include 3 operations, the Scraper, the Parser and the Uploader. The Scraper consists of creating a browser that will browse the Alcuin website and retrieve the HTML content of different tables for the differents "groups" (called projects) of the school. The next operation is the Parse operation, this operation takes the HTML content from the previous operation and retrieve the differents courses for the projects. Finally, from the projects retrieved, the Uploader operation uploads compare the already uploaded courses with the retrieved courses and create / update the courses according to the retrieved data.

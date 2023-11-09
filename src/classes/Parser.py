@@ -63,27 +63,33 @@ class Parser:
         tbody = soup.select_one("tbody")
 
         rows = tbody.findChildren("tr", recursive=False)
-        weeks = rows[2:]
+
+        # Exclude the first row because it is the row showing the week days (Lundi, Mardi...)
+        weeks = rows[1:]
 
         courses: list[Course] = []
-
         for week in weeks:
             cells = week.findChildren("td", recursive=False)
+
+            # Exclude the first cell because it is the cell showing the week number
             days = cells[1:]
 
             for day in days:
                 tables = day.findChildren("table", recursive=False)
 
+                if len(tables) == 0:
+                    continue
+
                 date_table = tables[0]
                 courses_tables = tables[1:]
 
                 date = int(date_table.get_text().strip())
-
                 for course_table in courses_tables:
                     try:
                         course = self.get_course(course_table, date)
                         courses.append(course)
-                    except:
+                    except Exception as e:
+                        print(e)
                         continue
 
         return courses

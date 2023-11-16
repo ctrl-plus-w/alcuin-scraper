@@ -16,14 +16,15 @@ from selenium.webdriver.chrome.service import Service
 # Custom Libraries & Modules
 from src.classes.logger import Logger
 
-from src.constants.credentials import USERNAME, PASSWORD
 from src.constants.main import PROJECTS
 
 
 class Scraper:
     """Scraper class to retrieve the HTML from Alcuin"""
 
-    def __init__(self, logger: Logger):
+    def __init__(self, username: str, password: str, logger: Logger):
+        self.username = username
+        self.password = password
         self.logger = logger
         self.driver = None
 
@@ -38,12 +39,12 @@ class Scraper:
         username_input = self.driver.find_element(
             By.ID, "UcAuthentification1_UcLogin1_txtLogin"
         )
-        username_input.send_keys(USERNAME)
+        username_input.send_keys(self.username)
 
         password_input = self.driver.find_element(
             By.ID, "UcAuthentification1_UcLogin1_txtPassword"
         )
-        password_input.send_keys(PASSWORD)
+        password_input.send_keys(self.password)
 
         submit_button = self.driver.find_element(
             By.ID, "UcAuthentification1_UcLogin1_btnEntrer"

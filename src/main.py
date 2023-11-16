@@ -9,10 +9,10 @@ from datetime import datetime
 from src.classes.pipe import Pipe
 from src.classes.logger import Logger
 
-from src.operations.supabase_upload import SupabaseUploadOperation
+from src.operations.supabase_upload import CalendarSupabaseUploadOperation
 from src.operations.backup import BackupOperation
-from src.operations.scrape import ScrapeOperation
-from src.operations.parse import ParseOperation
+from src.operations.scrape import CalendarScrapeOperation
+from src.operations.parse import CalendarParseOperation
 
 from src.constants.main import PROJECTS
 
@@ -38,9 +38,9 @@ def main():
     pipe = Pipe(logger, logs_directory)
 
     pipe.add(BackupOperation(backup_file))
-    pipe.add(ScrapeOperation(projects))
-    pipe.add(ParseOperation())
-    pipe.add(SupabaseUploadOperation())
+    pipe.add(CalendarScrapeOperation(projects))
+    pipe.add(CalendarParseOperation())
+    pipe.add(CalendarSupabaseUploadOperation())
     pipe.start()
 
 

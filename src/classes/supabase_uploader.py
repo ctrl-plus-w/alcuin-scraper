@@ -1,6 +1,6 @@
 """Supabase uploader module"""
+from typing import Dict
 
-# Custom Libraries & Modules
 from src.classes.logger import Logger
 from src.classes.course import Course
 
@@ -13,7 +13,10 @@ class SupabaseUploader:
     def __init__(self, supabase, logger: Logger):
         self.logger = logger
         self.supabase = supabase
-        self.table = supabase.table("courses")
+
+        self.courses_table = supabase.table("courses")
+        self.profiles_table = supabase.table("profiles")
+        self.grades_table = supabase.table("grades")
 
     def find_course_index(self, courses: list[Course], course: Course):
         """
@@ -35,12 +38,14 @@ class SupabaseUploader:
 
     def get_uploaded_group_courses(self, project: str):
         """Get all the courses of the given project"""
-        request = self.table.select("*").eq("group", project).eq("disabled", False)
+        request = (
+            self.courses_table.select("*").eq("group", project).eq("disabled", False)
+        )
         response = request.execute()
 
         return response.data
 
-    def upload_project_courses(self, project: str, courses: list[Course]):
+    def upload_single_project_courses(self, project: str, courses: list[Course]):
         """Upload the courses of the given project"""
         uploaded_courses = self.get_uploaded_group_courses(project)
         courses_as_supabase_dict = list(map(lambda c: c.as_supabase_dict(), courses))
@@ -58,7 +63,7 @@ class SupabaseUploader:
                 # Enable this condition if you only want to allow setting courses
                 # as disabled if they are in the future
                 # if not util.is_in_past(uploaded_course["start_datetime"]):
-                self.table.update({"disabled": True}).eq("id", uuid).execute()
+                self.courses_table.update({"disabled": True}).eq("id", uuid).execute()
                 continue
 
             matching_course = courses_as_supabase_dict[matching_course_index]
@@ -76,7 +81,7 @@ class SupabaseUploader:
                     "location": matching_course["location"],
                 }
 
-                self.table.update(update_obj).eq("id", uuid).execute()
+                self.courses_table.update(update_obj).eq("id", uuid).execute()
                 courses_as_supabase_dict.pop(matching_course_index)
                 continue
 
@@ -90,15 +95,82 @@ class SupabaseUploader:
         # Then upload the remaining courses
         # ==> Courses that don't exists yet / have been modified
         if len(courses_as_supabase_dict) > 0:
-            self.table.insert(courses_as_supabase_dict).execute()
+            self.courses_table.insert(courses_as_supabase_dict).execute()
 
-    def upload(self, projects_courses):
+    def upload_projects_courses(self, projects_courses):
         """Upload the projects courses to supabase"""
         for project in projects_courses:
             courses = projects_courses[project]
             self.logger.info(f"Found {len(courses)} for the project {project}")
 
-            self.upload_project_courses(project, projects_courses[project])
+            self.upload_single_project_courses(project, projects_courses[project])
             self.logger.info(
                 f"Successfully checked {len(courses)} to the project {project}."
             )
+
+    def get_profile_from_email(self, email: str):
+        """Get the profile from supabase (raise an error if the profile is not found)"""
+        profiles = self.profiles_table.select("*").eq("email", email).execute().data
+
+        if len(profiles) == 0:
+            msg = f"Didn't found any profile for the given email : '{email}'"
+            raise ValueError(msg)
+
+        return profiles[0]
+
+    def get_matching_uploaded_grade(self, grade, profile):
+        """Get the uploaded matching grade"""
+        req = self.grades_table.select("*")
+
+        req.eq("user_id", profile["id"])
+        req.eq("code_ue", grade["code_ue"])
+        req.eq("code", grade["code"])
+        req.eq("label", grade["label"])
+        req.eq("code", grade["code"])
+
+        uploaded_grades = req.execute().data
+
+        if len(uploaded_grades) == 0:
+            return None
+
+        return uploaded_grades[0]
+
+    def upload_single_grade(self, grade, profile):
+        """Uploade or update a single grade"""
+        uploaded_grade = self.get_matching_uploaded_grade(grade, profile)
+
+        def _(value):
+            if value == "":
+                return None
+            return value
+
+        if uploaded_grade:
+            self.grades_table.update(
+                {
+                    "coef": _(grade["coef"]),
+                    "mean": _(grade["mean"]),
+                }
+            ).eq("id", uploaded_grade["id"]).execute()
+        else:
+            self.grades_table.insert(
+                {
+                    "user_id": profile["id"],
+                    "code_ue": _(grade["code_ue"]),
+                    "ue": _(grade["ue"]),
+                    "label": _(grade["label"]),
+                    "code": _(grade["code"]),
+                    "coef": _(grade["coef"]),
+                    "mean": _(grade["mean"]),
+                }
+            ).execute()
+
+    def upload_grades(self, grades: list[Dict], email: str):
+        """Upload the grades for the user profiel with the given email"""
+        profile = self.get_profile_from_email(email)
+        self.logger.info(
+            f"Successfully found a profile with id {profile['id']} (email: {email})"
+        )
+
+        self.logger.info(f"Uploading {len(grades)} grades to the user's profiel.")
+        for grade in grades:
+            self.upload_single_grade(grade, profile)

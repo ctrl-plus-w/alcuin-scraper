@@ -50,25 +50,26 @@ class Scraper:
         )
         submit_button.click()
 
-    def switch_to_agenda(self):
-        """Switch to the agenda frame"""
-        self.driver.execute_script(
-            "window.parent.content.location = '/OpDotnet/commun/Login/aspxtoasp.aspx?url=/Eplug/Agenda/Agenda.asp?IdApplication=190&TypeAcces=Utilisateur&IdLien=649';"
-        )
+    def set_location(self, location: str):
+        """Set the window parent content location"""
+        self.driver.execute_script(f"window.parent.content.location = '{location}'")
+
+    def navigate_to(self, tab: str):
+        """Navigate to the alcuin tab (AGENDA | FICHE)"""
+        if tab == "AGENDA":
+            self.set_location(
+                "/OpDotnet/commun/Login/aspxtoasp.aspx?url=/Eplug/Agenda/Agenda.asp?IdApplication=190&TypeAcces=Utilisateur&IdLien=649"
+            )
+
+        if tab == "FICHE":
+            self.set_location(
+                "/OpDotNet/Eplug/Annuaire/Accueil.aspx?IdApplication=142&TypeAcces=MaFiche&IdLien=6816"
+            )
 
     def switch_to_content(self):
         """Switch to the content frame"""
         self.driver.switch_to.frame(
             self.driver.find_element(By.CSS_SELECTOR, 'frame[name="content"]')
-        )
-
-    def wait_for_content_to_load(self):
-        """Wait for the content frame to load"""
-        WebDriverWait(self.driver, 60).until(
-            expected_conditions.visibility_of_element_located(
-                (By.CSS_SELECTOR, "#DivAll > table:nth-child(19)")
-            ),
-            "The frame wasn't found.",
         )
 
     def setup_session(self):
@@ -102,16 +103,6 @@ class Scraper:
 
         self.setup_session()
 
-    def set_project(self, project):
-        """Set the project (group) by its id"""
-        uid = PROJECTS[project]
-
-        self.logger.info(f"Setting the project to {project} (id: {uid}).")
-        self.driver.execute_script(f"ModCal('{uid}');")
-        sleep(1)
-
-        self.wait_for_content_to_load()
-
 
 class CalendarScraper(Scraper):
     """Scraper for the calendars informations"""
@@ -121,7 +112,7 @@ class CalendarScraper(Scraper):
         sleep(5)
 
         self.logger.info("Switching to the agenda...")
-        self.switch_to_agenda()
+        self.navigate_to("AGENDA")
         sleep(5)
 
         self.logger.info("Switching to the content frame...")
@@ -135,6 +126,25 @@ class CalendarScraper(Scraper):
 
         self.logger.info("Waiting for the content to load...")
         self.wait_for_content_to_load()
+
+    def set_project(self, project):
+        """Set the project (group) by its id"""
+        uid = PROJECTS[project]
+
+        self.logger.info(f"Setting the project to {project} (id: {uid}).")
+        self.driver.execute_script(f"ModCal('{uid}');")
+        sleep(1)
+
+        self.wait_for_content_to_load()
+
+    def wait_for_content_to_load(self):
+        """Wait for the content frame to load"""
+        WebDriverWait(self.driver, 60).until(
+            expected_conditions.visibility_of_element_located(
+                (By.CSS_SELECTOR, "#DivAll > table:nth-child(19)")
+            ),
+            "The frame wasn't found.",
+        )
 
     def set_next_month(self):
         """Switch to the agenda next month"""
@@ -187,3 +197,66 @@ class CalendarScraper(Scraper):
             projects_html[project] = self.scrape_project(project)
 
         return projects_html
+
+
+class GradesScraper(Scraper):
+    """Scraper for the grades"""
+
+    def select_tab(self, tab_id: str):
+        """Select a tab (0: 'Dossier étudiant' | 1: 'Diplômes' | 2: 'Représentants légaux' | 3: 'Parcours' | 4: 'Agenda')"""
+        locator = (By.CSS_SELECTOR, f".DefaultTab#onglets_{tab_id}")
+        button = self.driver.find_element(*locator)
+        button.click()
+
+    def wait_for_content_to_load(self):
+        """Wait for the content frame to load"""
+        locator = (By.CSS_SELECTOR, "#Table2")
+        WebDriverWait(self.driver, 60).until(
+            expected_conditions.visibility_of_element_located(locator),
+            "The frame wasn't found.",
+        )
+
+    def select_path(self, path_name: str):
+        """Select the path by its name / label"""
+        xpath = f'//table[contains(@class,"Datagrid")]/tbody/tr[not(contains(@class,"mainHeader"))]/td/a[contains(text(),"{path_name}")]'
+        locator = (By.XPATH, xpath)
+
+        path_a = self.driver.find_element(*locator)
+        path_a.click()
+
+    def switch_to_frm3(self):
+        """Switch to the frm3 frame"""
+        self.driver.switch_to.frame(self.driver.find_element(By.ID, "frm3"))
+
+    def wait_for_frm3_to_load(self):
+        """Wait for the frm3 frame to load"""
+        locator = (By.ID, "ifrm3")
+        WebDriverWait(self.driver, 60).until(
+            expected_conditions.visibility_of_element_located(locator),
+            "The frame wasn't found.",
+        )
+
+    def setup_session(self):
+        self.login()
+        sleep(5)
+
+        self.logger.info("Switching to the 'fiche'...")
+        self.navigate_to("FICHE")
+        sleep(5)
+
+        self.logger.info("Switching to the content frame...")
+        self.switch_to_content()
+
+        self.logger.info("Switching to the 'parcours' tab...")
+        self.select_tab(3)
+
+        self.logger.info("Switching to the frm3 frame")
+        self.switch_to_frm3()
+
+    def scrape(self, path_name: str):
+        """Scrape the path datagrid HTML"""
+        self.logger.info(f"Selecting the path with label : '{path_name}'")
+        self.select_path(path_name)
+
+        grid = self.driver.find_element(By.CLASS_NAME, "Datagrid")
+        return grid.get_attribute("outerHTML")

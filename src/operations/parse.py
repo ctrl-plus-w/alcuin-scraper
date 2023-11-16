@@ -7,7 +7,7 @@ from dateutil import relativedelta
 
 # Custom Libraries & Modules
 from src.classes.operation import Operation
-from src.classes.parser import Parser
+from src.classes.parser import CalendarParser
 from src.classes.logger import Logger
 from src.classes.course import Course
 
@@ -51,11 +51,11 @@ class ParseOperation(Operation):
 
         return project_courses
 
-    def execute(self, data, logger: Logger):
+    def execute(self, data, _logger: Logger):
         today_date = datetime.today()
         next_month_date = today_date + relativedelta.relativedelta(months=1)
 
-        parser = Parser()
+        parser = CalendarParser()
 
         projects_courses = {}
 

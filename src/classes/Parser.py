@@ -1,14 +1,16 @@
 """Parser module"""
 import re
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 
 
 # External Librarie & Modules
 from src.classes.course import Course
 
+from src import util
 
-class Parser:
+
+class CalendarParser:
     """Parser class used to parse a calendar"""
 
     def is_location(self, txt: str):
@@ -100,3 +102,47 @@ class Parser:
                         continue
 
         return courses
+
+
+class GradesParser:
+    """Parser class used to parse the grades table"""
+
+    def parse_row(self, tag: Tag):
+        """Parse a grades table row"""
+        spaces_count = len(tag.select(".ygtvspacer"))
+
+        cells = tag.select(".DataGridColumn")
+
+        return {
+            "spaces": spaces_count,
+            "label": cells[0].text.strip(),
+            "code": cells[1].text.strip(),
+            "status": cells[2].text.strip(),
+            "coef": cells[4].text.strip(),
+            "mean": cells[5].text.strip(),
+            "credits": cells[6].text.strip(),
+            "grade": cells[7].text.strip(),
+        }
+
+    def parse(self, html: str):
+        """Parse the grades HTML table"""
+        soup = BeautifulSoup(html, features="html.parser")
+
+        rows = soup.select(".DataGridItem")
+
+        grades = []
+
+        ue = None
+        code_ue = None
+
+        for html_row in rows:
+            row = self.parse_row(html_row)
+
+            if row["status"] == "En construction":
+                ue = row["label"]
+                code_ue = row["code"]
+                continue
+
+            grades.append({**row, "ue": ue, "code_ue": code_ue})
+
+        return grades

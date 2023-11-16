@@ -36,6 +36,6 @@ class SupabaseUploadOperation(Operation):
         logger.info(f"Uploading {len(data)} projects to supabase.")
 
         uploader = SupabaseUploader(self.supabase, logger)
-        uploader.upload(data)
+        uploader.upload_projects_courses(data)
 
         logger.info("Finished to uploade the courses.")

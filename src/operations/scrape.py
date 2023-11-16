@@ -5,7 +5,7 @@ import json
 # Custom Libraries & Modules
 from src.classes.operation import Operation
 from src.classes.logger import Logger
-from src.classes.scraper import Scraper
+from src.classes.scraper import CalendarScraper
 
 
 class ScrapeOperation(Operation):
@@ -16,16 +16,16 @@ class ScrapeOperation(Operation):
 
         super().__init__("SCRAPE")
 
-    def validate(self, data) -> bool:
+    def validate(self, _data) -> bool:
         return True
 
     def save_data(self, data, path: str):
         with open(f"{path}.json", "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2)
 
-    def execute(self, data, logger: Logger):
+    def execute(self, _data, logger: Logger):
         # Initialize the scrapper
-        scraper = Scraper(logger)
+        scraper = CalendarScraper(logger)
 
         # Initalize the returned data dictionnary
         projects_html = {p: [[], []] for p in self.projects}

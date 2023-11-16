@@ -1,3 +1,4 @@
+"""Supabase upload operation module"""
 # External Libraries
 from supabase import create_client
 
@@ -7,19 +8,21 @@ from src.classes.operation import Operation
 from src.classes.course import Course
 from src.classes.logger import Logger
 
-from constants.credentials import SUPABASE_URL, SERVICE_ROLE_KEY
+from src.constants.credentials import SUPABASE_URL, SERVICE_ROLE_KEY
 
-import util
+from src import util
 
 
 class SupabaseUploadOperation(Operation):
+    """Supabase upload operation"""
+
     def __init__(self):
         self.supabase = create_client(SUPABASE_URL, SERVICE_ROLE_KEY)
 
         super().__init__("SUPABASE-UPLOAD")
 
     def validate(self, data):
-        if not type(data) is dict:
+        if not isinstance(data, dict):
             return False
 
         projects = list(data.keys())

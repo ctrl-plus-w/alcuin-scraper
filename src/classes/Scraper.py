@@ -27,10 +27,14 @@ class Scraper:
         self.logger = logger
         self.driver = None
 
-        self.setup_session()
+        self.setup_driver()
 
     def login(self):
         """Login to the page"""
+
+        self.logger.info("Navigating to the login page.")
+        self.driver.get("https://esaip.alcuin.com/OpDotNet/Noyau/Login.aspx")
+
         username_input = self.driver.find_element(
             By.ID, "UcAuthentification1_UcLogin1_txtLogin"
         )
@@ -58,13 +62,6 @@ class Scraper:
             self.driver.find_element(By.CSS_SELECTOR, 'frame[name="content"]')
         )
 
-    def set_next_month(self):
-        """Switch to the agenda next month"""
-        self.logger.info("Switch the agenda to the next month.")
-        self.driver.execute_script(
-            "SelDat(document.formul.CurDat,null,'MovDat');SelMoiSui();ChxDat=1;SetSelDat();"
-        )
-
     def wait_for_content_to_load(self):
         """Wait for the content frame to load"""
         WebDriverWait(self.driver, 60).until(
@@ -74,26 +71,12 @@ class Scraper:
             "The frame wasn't found.",
         )
 
-    def select_interval(self, visible_text):
-        """Select the interval"""
-        interval_select = Select(
-            self.driver.find_element(
-                By.CSS_SELECTOR,
-                "#DivTit > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > select:nth-child(2)",
-            )
-        )
-
-        interval_select.select_by_visible_text(visible_text)
-
-    def get_agenda_table_body(self):
-        """Retrieve the agenda table body element"""
-        return self.driver.find_element(
-            By.CSS_SELECTOR,
-            "#DivVis > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > table:nth-child(1)",
-        )
-
     def setup_session(self):
-        """Setup the session, login and go to the calendars"""
+        """Setup the session"""
+        return
+
+    def setup_driver(self):
+        """Setup the driver"""
         self.logger.info("Setting up the session")
         dev = len(sys.argv) > 1 and "--dev" in sys.argv
 
@@ -111,13 +94,29 @@ class Scraper:
 
         DriverCore = webdriver.Firefox if dev else webdriver.Chrome
 
-        self.logger.info("Creating the driver.")
+        self.logger.info("Creating the driver...")
         self.driver = DriverCore(options=opts, service=servs)
+        self.logger.info("Created the driver")
 
-        self.logger.info("Created the driver, about the navigate to the url.")
-        # driver = webdriver.Firefox(options=opts, service=servs)
-        self.driver.get("https://esaip.alcuin.com/OpDotNet/Noyau/Login.aspx")
+        self.driver.maximize_window()
 
+        self.setup_session()
+
+    def set_project(self, project):
+        """Set the project (group) by its id"""
+        uid = PROJECTS[project]
+
+        self.logger.info(f"Setting the project to {project} (id: {uid}).")
+        self.driver.execute_script(f"ModCal('{uid}');")
+        sleep(1)
+
+        self.wait_for_content_to_load()
+
+
+class CalendarScraper(Scraper):
+    """Scraper for the calendars informations"""
+
+    def setup_session(self):
         self.login()
         sleep(5)
 
@@ -137,15 +136,30 @@ class Scraper:
         self.logger.info("Waiting for the content to load...")
         self.wait_for_content_to_load()
 
-    def set_project(self, project):
-        """Set the project (group) by its id"""
-        uid = PROJECTS[project]
+    def set_next_month(self):
+        """Switch to the agenda next month"""
+        self.logger.info("Switch the agenda to the next month.")
+        self.driver.execute_script(
+            "SelDat(document.formul.CurDat,null,'MovDat');SelMoiSui();ChxDat=1;SetSelDat();"
+        )
 
-        self.logger.info(f"Setting the project to {project} (id: {uid}).")
-        self.driver.execute_script(f"ModCal('{uid}');")
-        sleep(1)
+    def select_interval(self, visible_text):
+        """Select the interval"""
+        interval_select = Select(
+            self.driver.find_element(
+                By.CSS_SELECTOR,
+                "#DivTit > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > select:nth-child(2)",
+            )
+        )
 
-        self.wait_for_content_to_load()
+        interval_select.select_by_visible_text(visible_text)
+
+    def get_agenda_table_body(self):
+        """Retrieve the agenda table body element"""
+        return self.driver.find_element(
+            By.CSS_SELECTOR,
+            "#DivVis > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > table:nth-child(1)",
+        )
 
     def scrape_project(self, project: str) -> str:
         """Scrape a single project and return the agenda HTML content"""

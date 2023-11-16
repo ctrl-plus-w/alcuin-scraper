@@ -8,7 +8,7 @@ from src.classes.logger import Logger
 from src.classes.scraper import CalendarScraper
 
 
-class ScrapeOperation(Operation):
+class CalendarScrapeOperation(Operation):
     """Scrape Operation used to retrieve the HTML content of the calendars"""
 
     def __init__(self, projects: list[str]):

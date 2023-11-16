@@ -14,7 +14,7 @@ from src.classes.course import Course
 from src import util
 
 
-class ParseOperation(Operation):
+class CalendarParseOperation(Operation):
     """Parse Operation used to retrieve the courses from the HTML"""
 
     def __init__(self):

@@ -13,7 +13,7 @@ from src.constants.credentials import SUPABASE_URL, SERVICE_ROLE_KEY
 from src import util
 
 
-class SupabaseUploadOperation(Operation):
+class CalendarSupabaseUploadOperation(Operation):
     """Supabase upload operation"""
 
     def __init__(self):

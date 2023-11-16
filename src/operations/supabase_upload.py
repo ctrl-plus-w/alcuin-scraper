@@ -2,10 +2,10 @@
 from supabase import create_client
 
 # Custom Libraries & Modules
-from classes.SupabaseUploader import SupabaseUploader
-from classes.Operation import Operation
-from classes.Course import Course
-from classes.Logger import Logger
+from src.classes.supabase_uploader import SupabaseUploader
+from src.classes.operation import Operation
+from src.classes.course import Course
+from src.classes.logger import Logger
 
 from constants.credentials import SUPABASE_URL, SERVICE_ROLE_KEY
 

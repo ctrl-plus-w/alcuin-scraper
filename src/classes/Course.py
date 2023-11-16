@@ -1,32 +1,26 @@
+"""Course class module"""
 from typing import Dict, Optional
 from datetime import datetime
+from dataclasses import dataclass
 
 
+@dataclass
 class Course:
-    def __init__(
-        self,
-        title: str,
-        start_time: Dict[str, str],
-        end_time: Dict[str, str],
-        professors: list[str],
-        location: str,
-        date: int,
-        group: Optional[str] = None,
-        month: Optional[int] = None,
-        year: Optional[int] = None,
-    ):
-        self.title = title
-        self.start_time = start_time
-        self.end_time = end_time
-        self.professors = professors
-        self.group = group
-        self.location = location
-        self.date = date
-        self.month = month
-        self.year = year
+    """Course class"""
+
+    title: str
+    start_time: Dict[str, str]
+    end_time: Dict[str, str]
+    professors: list[str]
+    location: str
+    date: int
+    group: Optional[str] = None
+    month: Optional[int] = None
+    year: Optional[int] = None
 
     @staticmethod
     def from_dict(obj):
+        """Initialize the Course from a dictionnary"""
         start_datetime = datetime.fromisoformat(obj["start_datetime"])
         end_datetime = datetime.fromisoformat(obj["end_datetime"])
 
@@ -53,6 +47,7 @@ class Course:
         )
 
     def as_dict(self):
+        """Return the course as a dictionnary"""
         return {
             "title": self.title,
             "start_time": self.start_time,
@@ -66,6 +61,7 @@ class Course:
         }
 
     def as_supabase_dict(self):
+        """Return the course as a dictionnary (for supabase)"""
         sth = self.start_time["hours"]
         stm = self.start_time["minutes"]
 
@@ -98,15 +94,18 @@ class Course:
 
     @staticmethod
     def set_month(courses: list["Course"], month: int):
+        """Set the course month value"""
         for course in courses:
             course.month = month
 
     @staticmethod
     def set_year(courses: list["Course"], year: int):
+        """Set the course year value"""
         for course in courses:
             course.year = year
 
     @staticmethod
     def set_group(courses: list["Course"], group: str):
+        """Set the course group value"""
         for course in courses:
             course.group = group

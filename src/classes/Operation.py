@@ -1,30 +1,33 @@
-from classes.Logger import Logger
+"""Operation module"""
+from dataclasses import dataclass
+
+from src.classes.logger import Logger
 
 
 class ValidationException(Exception):
+    """Validation exception when the passed data isn't valid"""
+
     def __init__(self):
         super().__init__("The data passed to the operation is invalid.")
 
 
+@dataclass
 class Operation:
     """An operation in the pipe"""
 
     name: str
 
-    def __init__(self, name: str):
-        self.name = name
-
-    def validate(self, data) -> bool:
+    def validate(self, _data) -> bool:
         """Validate the data passed to the operation"""
-        pass
+        return
 
-    def execute(self, data, logger: Logger):
+    def execute(self, _data, _logger: Logger):
         """Execute the operation"""
-        pass
+        return 1
 
-    def save_data(self, data, path: str):
+    def save_data(self, _data, _path: str):
         """Save the data returned by the execute method"""
-        pass
+        return ""
 
     def invoke(self, data, logger: Logger, logs_directory: str):
         """Invoke the operation: check the validity of the passed data, execute the method and save the data"""
@@ -35,6 +38,6 @@ class Operation:
         self.save_data(data, f"{logs_directory}/{self.name}")
         return data
 
-    def __eq__(self, op1, op2):
+    def __eq__(self, op):
         """Check whether or not two operations are the same"""
-        return op1.name == op2.name
+        return self.name == op.name

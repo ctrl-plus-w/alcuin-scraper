@@ -1,34 +1,36 @@
+"""Parse Operation module"""
 # External Libraries
+import json
+
 from datetime import datetime
 from dateutil import relativedelta
 
-import json
-
 # Custom Libraries & Modules
-from classes.Operation import Operation
-from classes.Scraper import Scraper
-from classes.Parser import Parser
-from classes.Logger import Logger
-from classes.Course import Course
+from src.classes.operation import Operation
+from src.classes.parser import Parser
+from src.classes.logger import Logger
+from src.classes.course import Course
 
-import util
+from src import util
 
 
 class ParseOperation(Operation):
+    """Parse Operation used to retrieve the courses from the HTML"""
+
     def __init__(self):
         super().__init__("PARSE")
 
     def validate(self, data) -> bool:
-        if not type(data) is dict:
+        if not isinstance(data, dict):
             return False
 
-        if not all(map(lambda e: util.all_str(e), data)):
+        if not all(map(util.all_str, data)):
             return False
 
         return True
 
     def save_data(self, data, path: str):
-        with open(f"{path}.json", "w") as f:
+        with open(f"{path}.json", "w", encoding="utf-8") as f:
             courses = {
                 project: list(map(lambda c: c.as_supabase_dict(), data[project]))
                 for project in data
@@ -38,17 +40,14 @@ class ParseOperation(Operation):
 
     @staticmethod
     def retrieve_data(path: str):
+        """Given a filename (path) retrieve its content and transform it into courses"""
         project_courses = {}
-        with open(path) as f:
+
+        with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
 
             for project in data:
-                project_courses[project] = list(
-                    map(
-                        lambda course: Course.from_dict(course),
-                        data[project],
-                    )
-                )
+                project_courses[project] = list(map(Course.from_dict, data[project]))
 
         return project_courses
 

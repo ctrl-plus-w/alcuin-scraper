@@ -1,31 +1,30 @@
 #!/usr/bin/python3
+"""Main module"""
 
 # External Libraries
 from datetime import datetime
 
-import json
 
 # Custom Libraries & Modules
-from classes.Pipe import Pipe
-from classes.Operation import Operation
-from classes.Logger import Logger
-from classes.Course import Course
+from src.classes.pipe import Pipe
+from src.classes.logger import Logger
 
-from operations.SupabaseUploadOperation import SupabaseUploadOperation
-from operations.BackupOperation import BackupOperation
-from operations.ScrapeOperation import ScrapeOperation
-from operations.ParseOperation import ParseOperation
+from src.operations.supabase_upload import SupabaseUploadOperation
+from src.operations.backup import BackupOperation
+from src.operations.scrape import ScrapeOperation
+from src.operations.parse import ParseOperation
 
-from constants.main import PROJECTS
+from src.constants.main import PROJECTS
 
-import util
+from src import util
 
 
 def main():
+    """Main project function"""
     projects = list(PROJECTS.keys())
 
     # Logs & Backup directory
-    dt_directory = util.slugify(str(datetime.now()).split(".")[0])
+    dt_directory = util.slugify(str(datetime.now()).split(".", maxsplit=1)[0])
     logs_directory = f"logs/{dt_directory}"
     backup_directory = f"backups/{dt_directory}"
 

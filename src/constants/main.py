@@ -1,3 +1,4 @@
+"""Main constants module"""
 PROJECTS = {
     "23_24_B1_CYBER": "PRJ19251",
     "23_24_B1_IA": "PRJ19250",

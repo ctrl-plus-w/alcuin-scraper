@@ -1,7 +1,6 @@
-from typing import List
-
-from classes.Operation import Operation, ValidationException
-from classes.Logger import Logger
+"""Pipe module"""
+from src.classes.operation import Operation, ValidationException
+from src.classes.logger import Logger
 
 
 class Pipe:
@@ -37,6 +36,7 @@ class Pipe:
             self.logger.error(
                 f"The data received for the operation {operation.name} is invalid."
             )
+            return None
 
     def start(self, data=None):
         """Invoke all the pipe's operations"""

@@ -1,3 +1,5 @@
+"""Utils module"""
+
 from datetime import datetime
 from typing import Callable, Iterable, TypeVar, Any, Iterator
 

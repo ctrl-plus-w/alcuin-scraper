@@ -1,16 +1,22 @@
-from bs4 import BeautifulSoup
-
+"""Parser module"""
 import re
 
+from bs4 import BeautifulSoup
+
+
 # External Librarie & Modules
-from classes.Course import Course
+from src.classes.course import Course
 
 
 class Parser:
-    def is_location(self, str):
-        return re.match("(^(amphi|Amphi).*)|((C|A|E)[0-9]+)", str) is not None
+    """Parser class used to parse a calendar"""
+
+    def is_location(self, txt: str):
+        """Check if the string represents a location"""
+        return re.match("(^(amphi|Amphi).*)|((C|A|E)[0-9]+)", txt) is not None
 
     def get_course(self, course_table, date):
+        """Get the course from the course_table html"""
         params = []
 
         for br_tag in course_table.find_all("br"):
@@ -58,6 +64,7 @@ class Parser:
         return Course(title, start_time, end_time, professors, location, date)
 
     def parse(self, html):
+        """Parse the calendar HTML"""
         soup = BeautifulSoup(html, features="html.parser")
 
         tbody = soup.select_one("tbody")

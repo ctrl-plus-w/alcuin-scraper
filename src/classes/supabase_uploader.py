@@ -1,18 +1,26 @@
-# Custom Libraries & Modules
-from classes.Logger import Logger
-from classes.Course import Course
+"""Supabase uploader module"""
 
-import util
+# Custom Libraries & Modules
+from src.classes.logger import Logger
+from src.classes.course import Course
+
+from src import util
 
 
 class SupabaseUploader:
+    """Supabase uploader class"""
+
     def __init__(self, supabase, logger: Logger):
         self.logger = logger
         self.supabase = supabase
         self.table = supabase.table("courses")
 
     def find_course_index(self, courses: list[Course], course: Course):
-        """Through the courses passed in the first parameter, return the index of the course first course with the same start and end time (as the second parameter). If the course isn't found, return -1."""
+        """
+        Through the courses passed in the first parameter, return the index of the course
+        first course with the same start and end time (as the second parameter).
+        If the course isn't found, return -1.
+        """
         for i, _course in enumerate(courses):
             stdt = "start_datetime"
             start_eq = util.compare_dates_with_timezone(course[stdt], _course[stdt])
@@ -47,7 +55,8 @@ class SupabaseUploader:
             # In case there is no course at the same time for the group
             # ==> The uploaded course is not on the calendar anymore
             if matching_course_index == -1:
-                # Enable this condition if you only want to allow setting courses as disabled if they are in the future
+                # Enable this condition if you only want to allow setting courses
+                # as disabled if they are in the future
                 # if not util.is_in_past(uploaded_course["start_datetime"]):
                 self.table.update({"disabled": True}).eq("id", uuid).execute()
                 continue

@@ -1,3 +1,4 @@
+"""Logging module"""
 import logging
 
 

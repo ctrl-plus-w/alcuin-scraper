@@ -155,6 +155,9 @@ def main():
 
     args = (queue, logger)
 
+    msg = "Launching the main process : API Process, Runner Process"
+    logger.info(chalk.bold(chalk.red(msg)))
+
     api_process = Process(target=api_checker, args=args)
     runner_process = Process(target=operations_runner, args=args)
 

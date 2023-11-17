@@ -24,7 +24,7 @@ Two files `worker.sh` and `main.sh` are also available to run the `worker` modul
 
 ## Documentation 
 
-## The call parameters
+### The call parameters
 
 Multiple parameters are allowed when running either the `src.main` module or the `src.worker` module :
 - `--dev`: The dev mode parameter run the project on the Firefox binary of selenium (Chrome otherwise). When not enabled, some properties are passed to the Chrome instance like the headless parameter and some others.

@@ -9,6 +9,7 @@ from supabase import create_client
 
 import chalk
 
+from src.classes.scraper import InvalidPassword
 from src.classes.logger import Logger
 from src.classes.pipe import Pipe
 
@@ -93,20 +94,8 @@ def api_checker(queue: Queue, logger: Logger):
         sleep(60)
 
 
-def run_scrape_grades_operation(item, logger: Logger, supabase, set_finished):
+def run_scrape_grades_operation(logger: Logger, user, set_finished):
     """Run the scrape grades operation"""
-    supabase = create_client(SUPABASE_URL, SERVICE_ROLE_KEY)
-
-    req = supabase.table("profiles").select("*").eq("id", item["user_id"])
-    users = req.execute().data
-
-    if len(users) == 0:
-        msg = "! Did not found any user with the specified id."
-        logger.info(chalk.bold(chalk.red(msg)))
-        set_finished(msg)
-        return
-
-    user = users[0]
 
     if not "alcuin_password" in user:
         msg = "! Missing alcuin password on the user profile."
@@ -132,27 +121,14 @@ def run_scrape_grades_operation(item, logger: Logger, supabase, set_finished):
     set_finished()
 
 
-def run_scrape_path_names_operation(item, logger: Logger, supabase, set_finished):
+def run_scrape_path_names_operation(logger: Logger, user, set_finished):
     """Run the retrieve path names operation"""
-
-    req = supabase.table("profiles").select("*").eq("id", item["user_id"])
-    users = req.execute().data
-
-    if len(users) == 0:
-        msg = "! Did not found any user with the specified id."
-        logger.info(chalk.bold(chalk.red(msg)))
-        set_finished(msg)
-        return
-
-    user = users[0]
 
     if not "alcuin_password" in user:
         msg = "! Missing alcuin password on the user profile."
         logger.info(chalk.bold(chalk.red(msg)))
         set_finished(msg)
         return
-
-    user = users[0]
 
     logs_directory = "/".join(logger.filename.split("/")[:-1])
     email = user["email"]
@@ -169,22 +145,42 @@ def run_operation(item, logger: Logger):
     """Run an operation from the item dictionnary"""
     logger.info(chalk.yellow(f"Running operation {item['operation']} "))
 
-    supabase = create_client(SUPABASE_URL, SERVICE_ROLE_KEY)
-
     def set_finished(message: str = None):
         """Set the queue item as finished"""
         args = {"finished": True, "message": message}
         req = supabase.table("queue").update(args).eq("id", item["id"])
         req.execute()
 
-    if item["operation"] == "SCRAPE_GRADES":
-        run_scrape_grades_operation(item, logger, supabase, set_finished)
+    supabase = create_client(SUPABASE_URL, SERVICE_ROLE_KEY)
 
-    elif item["operation"] == "SCRAPE_PATH_NAMES":
-        run_scrape_path_names_operation(item, logger, supabase, set_finished)
+    req = supabase.table("profiles").select("*").eq("id", item["user_id"])
+    users = req.execute().data
 
-    else:
-        set_finished("! Invalid operation.")
+    if len(users) == 0:
+        msg = "! Did not found any user with the specified id."
+        logger.info(chalk.bold(chalk.red(msg)))
+        set_finished(msg)
+        return
+
+    user = users[0]
+
+    try:
+        if item["operation"] == "SCRAPE_GRADES":
+            run_scrape_grades_operation(logger, user, set_finished)
+
+        elif item["operation"] == "SCRAPE_PATH_NAMES":
+            run_scrape_path_names_operation(logger, user, set_finished)
+
+        else:
+            set_finished("! Invalid operation.")
+    except InvalidPassword:
+        req = supabase.table("profiles").update({"password": "INVALID"})
+        req.eq("id", user["id"])
+        req.execute()
+
+        set_finished("! Invalid user password.")
+
+        return
 
 
 def operations_runner(queue: Queue, logger: Logger):

@@ -174,7 +174,7 @@ def run_operation(item, logger: Logger):
         else:
             set_finished("! Invalid operation.")
     except InvalidPassword:
-        req = supabase.table("profiles").update({"password": "INVALID"})
+        req = supabase.table("profiles").update({"alcuin_password": "INVALID"})
         req.eq("id", user["id"])
         req.execute()
 

@@ -42,7 +42,7 @@ The `src/worker.py` file is intended to be used as a service. Its purpose is to 
 To install the worker as a service, a `alcuin-scraper.service` file is provided. Here is the list of commands you need to run so as to "install" it :
 
 ```console
-sudo cp src/alcuin-scraper.service /etc/systemd/system
+sudo cp alcuin-scraper.service /etc/systemd/system
 sudo systemctl enable alcuin-scraper.service
 sudo systemctl start alcuin-scraper.service
 

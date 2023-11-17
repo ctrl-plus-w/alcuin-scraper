@@ -66,3 +66,34 @@ class GradesSupabaseUploadOperation(Operation):
         uploader.upload_grades(data, self.email)
 
         logger.info("Finished to uploade the grades.")
+
+
+class PathNamesSupabaseUploadOperation(Operation):
+    """Supabase upload path names operation"""
+
+    def __init__(self, email: str):
+        self.email = email
+        self.supabase = create_client(SUPABASE_URL, SERVICE_ROLE_KEY)
+
+        super().__init__("SUPABASE-UPLOAD")
+
+    def validate(self, data):
+        if not isinstance(data, list):
+            return False
+
+        if not all(map(lambda e: isinstance(e, str), data)):
+            return False
+
+        return True
+
+    def execute(self, data, logger: Logger):
+        logger.info(
+            f"Updating the available path names of the user with email {self.email}"
+        )
+
+        req = self.supabase.table("profiles")
+        req = req.update({"available_path_names": data})
+        req.eq("email", self.email)
+        req.execute()
+
+        logger.info("Finished to uploade the grades.")

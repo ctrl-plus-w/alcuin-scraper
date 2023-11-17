@@ -3,7 +3,7 @@
 import json
 
 # Custom Libraries & Modules
-from src.classes.scraper import CalendarScraper, GradesScraper
+from src.classes.scraper import CalendarScraper, GradesScraper, PathNamesScraper
 from src.classes.operation import Operation
 from src.classes.logger import Logger
 
@@ -67,3 +67,26 @@ class GradesScrapeOperation(Operation):
         html = scraper.scrape(self.path_name)
 
         return html
+
+
+class PathNamesScrapeOperation(Operation):
+    """Scrape Operation used to retrieve the HTML content of the paths"""
+
+    def __init__(self, username: str, password: str):
+        self.username = username
+        self.password = password
+
+        super().__init__("SCRAPE")
+
+    def validate(self, _data) -> bool:
+        return True
+
+    def save_data(self, data, path: str):
+        with open(f"{path}.json", "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2)
+
+    def execute(self, _data, logger: Logger):
+        scraper = PathNamesScraper(self.username, self.password, logger)
+        path_names = scraper.scrape()
+
+        return path_names

@@ -16,6 +16,8 @@ from selenium.webdriver.chrome.service import Service
 # Custom Libraries & Modules
 from src.classes.logger import Logger
 
+from src.util import _m
+
 from src.constants.main import PROJECTS
 
 
@@ -261,3 +263,67 @@ class GradesScraper(Scraper):
 
         grid = self.driver.find_element(By.CLASS_NAME, "Datagrid")
         return grid.get_attribute("outerHTML")
+
+
+class PathNamesScraper(Scraper):
+    """Scraper for the path names"""
+
+    def select_tab(self, tab_id: str):
+        """Select a tab (0: 'Dossier étudiant' | 1: 'Diplômes' | 2: 'Représentants légaux' | 3: 'Parcours' | 4: 'Agenda')"""
+        locator = (By.CSS_SELECTOR, f".DefaultTab#onglets_{tab_id}")
+        button = self.driver.find_element(*locator)
+        button.click()
+
+    def wait_for_content_to_load(self):
+        """Wait for the content frame to load"""
+        locator = (By.CSS_SELECTOR, "#Table2")
+        WebDriverWait(self.driver, 60).until(
+            expected_conditions.visibility_of_element_located(locator),
+            "The frame wasn't found.",
+        )
+
+    def select_path(self, path_name: str):
+        """Select the path by its name / label"""
+        xpath = f'//table[contains(@class,"Datagrid")]/tbody/tr[not(contains(@class,"mainHeader"))]/td/a[contains(text(),"{path_name}")]'
+        locator = (By.XPATH, xpath)
+
+        path_a = self.driver.find_element(*locator)
+        path_a.click()
+
+    def switch_to_frm3(self):
+        """Switch to the frm3 frame"""
+        self.driver.switch_to.frame(self.driver.find_element(By.ID, "frm3"))
+
+    def wait_for_frm3_to_load(self):
+        """Wait for the frm3 frame to load"""
+        locator = (By.ID, "ifrm3")
+        WebDriverWait(self.driver, 60).until(
+            expected_conditions.visibility_of_element_located(locator),
+            "The frame wasn't found.",
+        )
+
+    def setup_session(self):
+        self.login()
+        sleep(5)
+
+        self.logger.info("Switching to the 'fiche'...")
+        self.navigate_to("FICHE")
+        sleep(5)
+
+        self.logger.info("Switching to the content frame...")
+        self.switch_to_content()
+
+        self.logger.info("Switching to the 'parcours' tab...")
+        self.select_tab(3)
+
+        self.logger.info("Switching to the frm3 frame")
+        self.switch_to_frm3()
+
+    def scrape(self):
+        """Scrape the path names"""
+        xpath = '//table[contains(@class,"Datagrid")]/tbody/tr[not(contains(@class,"mainHeading"))]/td[1]/a[1]'
+        locator = (By.XPATH, xpath)
+
+        path_a = self.driver.find_elements(*locator)
+        self.logger.info(f"Retrieved {len(path_a)} paths.")
+        return _m(lambda p: p.text, path_a)

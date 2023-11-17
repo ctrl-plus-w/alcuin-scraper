@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#!/usr/bin/bash
 
 cd /usr/local/alcuin-scrapper
 source bin/activate

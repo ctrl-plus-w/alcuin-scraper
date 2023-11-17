@@ -25,7 +25,7 @@ def main():
 
     # Logs & Backup directory
     dt_directory = util.slugify(str(datetime.now()).split(".", maxsplit=1)[0])
-    logs_directory = f"logs/{dt_directory}"
+    logs_directory = f"logs/scraper/{dt_directory}"
     backup_directory = f"backups/{dt_directory}"
 
     util.create_directory(logs_directory)

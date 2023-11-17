@@ -145,7 +145,7 @@ def main():
     """Main runner function"""
     # Logs directory
     dt_directory = slugify(str(datetime.now()).split(".", maxsplit=1)[0])
-    logs_directory = f"logs/{dt_directory}"
+    logs_directory = f"logs/worker/{dt_directory}"
     create_directory(logs_directory)
 
     queue = Queue()

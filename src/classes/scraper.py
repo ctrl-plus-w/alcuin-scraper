@@ -1,5 +1,4 @@
 """Scraper module"""
-# External Libraries
 import sys
 
 from typing import Dict
@@ -7,6 +6,7 @@ from time import sleep, time
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait, Select
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.chrome.options import Options
@@ -19,6 +19,13 @@ from src.classes.logger import Logger
 from src.util import _m
 
 from src.constants.main import PROJECTS
+
+
+class InvalidPassword(Exception):
+    """Alcuin password invalid exception"""
+
+    def __init__(self):
+        super().__init__("Invalid password")
 
 
 class Scraper:
@@ -52,6 +59,20 @@ class Scraper:
             By.ID, "UcAuthentification1_UcLogin1_btnEntrer"
         )
         submit_button.click()
+
+        try:
+            locator = (
+                By.CSS_SELECTOR,
+                "#UcAuthentification1_UcLogin1_UcBandeauMessages1_pnlMain",
+            )
+
+            WebDriverWait(self.driver, 5).until(
+                expected_conditions.presence_of_element_located(locator),
+                "Successfull login",
+            )
+            raise InvalidPassword()
+        except TimeoutException:
+            return
 
     def set_location(self, location: str):
         """Set the window parent content location"""

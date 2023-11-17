@@ -82,15 +82,16 @@ def run_operation(item, logger: Logger):
     req = supabase.table("profiles").select("*").eq("id", item["user_id"])
     users = req.execute().data
 
-    def set_finished():
+    def set_finished(message: str = None):
         """Set the queue item as finished"""
-        req = supabase.table("queue").update({"finished": True}).eq("id", item["id"])
+        args = {"finished": True, "message": message}
+        req = supabase.table("queue").update(args).eq("id", item["id"])
         req.execute()
 
     if len(users) == 0:
         msg = "! Did not found any user with the specified id."
         logger.info(chalk.bold(chalk.red(msg)))
-        set_finished()
+        set_finished(msg)
         return
 
     user = users[0]
@@ -98,13 +99,13 @@ def run_operation(item, logger: Logger):
     if not "alcuin_password" in user:
         msg = "! Missing alcuin password on the user profile."
         logger.info(chalk.bold(chalk.red(msg)))
-        set_finished()
+        set_finished(msg)
         return
 
     if not "path_name" in user:
         msg = "! Missing path name on the user profile."
         logger.info(chalk.bold(chalk.red(msg)))
-        set_finished()
+        set_finished(msg)
         return
 
     logs_directory = "/".join(logger.filename.split("/")[:-1])

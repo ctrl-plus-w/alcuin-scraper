@@ -20,7 +20,7 @@ To install all the dependencies, you can run the following command :  `python3 -
 ## Run the project
 
 You can run the project with `python3 -m src.main` (for the main scraper) (Don't forget to source the environment.). You can also run the worker with the following command : `python3 -m src.worker`.
-Two files `worker.sh` and `main.sh` are also available to run the `worker` module and the `main` module from a bash file.
+Two files `worker.sh` and `main.sh` are also available to run the `worker` module and the `main` module from a bash file. You might have to `chmod +x worker.sh` and `chmod +x main.sh` if you don't have the required permissions to run the files.
 
 ## Documentation 
 

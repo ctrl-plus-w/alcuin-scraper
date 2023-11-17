@@ -7,8 +7,6 @@ from bs4 import BeautifulSoup, Tag
 # External Librarie & Modules
 from src.classes.course import Course
 
-from src import util
-
 
 class CalendarParser:
     """Parser class used to parse a calendar"""

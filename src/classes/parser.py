@@ -128,7 +128,7 @@ class GradesParser:
         """Parse the grades HTML table"""
         soup = BeautifulSoup(html, features="html.parser")
 
-        rows = soup.select(".DataGridItem")
+        rows = soup.select(".DataGridItem, .DatagridItemOnMouseOver")
 
         grades = []
 

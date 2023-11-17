@@ -2,7 +2,7 @@
 
 ## Preface
 
-This project is running on a [venv](https://docs.python.org/3/library/venv.html). So as to running any instruction you need to source the env with `source bin/activate`. However, before sourcing the environment, you need to initialize it if not the case with the `python3 -m venv .` (while being in the root folder of the project).
+This project is running on a [venv](https://docs.python.org/3/library/venv.html). So as to running any instruction you need to source the env with `source bin/activate`. However, before sourcing the environment, you need to initialize it if not the case with the `python3 -m venv .` (while being in the root folder of the project). Note that if you are on a custom production machine, you don't need to create a virtual environement since the machine itself is the environement. Also, the worker was made to work without the sourced environement.
 
 ## Installation
 
@@ -49,4 +49,9 @@ sudo systemctl start alcuin-scraper.service
 
 # You can check the service status with
 sudo systemctl status alcuin-scraper.service
+```
+
+If the service fail to start, you an check the logs with the following command : 
+```
+journalctl -u alcuin-scraper.service -b
 ```

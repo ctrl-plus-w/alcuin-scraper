@@ -43,6 +43,7 @@ To install the worker as a service, a `alcuin-scraper.service` file is provided.
 
 ```console
 sudo cp alcuin-scraper.service /etc/systemd/system
+sudo systemctl daemon-reload 
 sudo systemctl enable alcuin-scraper.service
 sudo systemctl start alcuin-scraper.service
 

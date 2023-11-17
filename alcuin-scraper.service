@@ -5,7 +5,7 @@ After=multi-user.target
 [Service]
 Type=simple
 Restart=always
-ExecStart=/usr/bin/python3 /usr/local/alcuin-scrapper/src/worker.py
+ExecStart=/usr/local/alcuin-scrapper/worker.sh
 
 [Install]
 WantedBy=multi-user.target

@@ -84,7 +84,7 @@ def run_command(item, logger: Logger):
         if item["command"] == "SCRAPE_CALENDARS":
             run_scrape_calendars_command(logger, set_finished)
 
-        if item["command"] == "SCRAPE_GRADES":
+        elif item["command"] == "SCRAPE_GRADES":
             run_scrape_grades_command(logger, user, set_finished)
 
         elif item["command"] == "SCRAPE_PATH_NAMES":

@@ -55,3 +55,5 @@ If the service fail to start, you an check the logs with the following command :
 ```
 journalctl -u alcuin-scraper.service -b
 ```
+
+Also, if you update the project, think about restarting the service.

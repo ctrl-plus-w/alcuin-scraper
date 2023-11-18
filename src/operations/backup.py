@@ -20,7 +20,7 @@ class BackupOperation(Operation):
 
         super().__init__("SUPABASE-BACKUP")
 
-    def validate(self, data):
+    def validate(self, _data):
         return True
 
     def execute(self, data, logger: Logger):

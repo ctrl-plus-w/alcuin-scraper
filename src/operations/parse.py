@@ -29,28 +29,6 @@ class CalendarParseOperation(Operation):
 
         return True
 
-    def save_data(self, data, path: str):
-        with open(f"{path}.json", "w", encoding="utf-8") as f:
-            courses = {
-                project: list(map(lambda c: c.as_supabase_dict(), data[project]))
-                for project in data
-            }
-
-            json.dump(courses, f, indent=2)
-
-    @staticmethod
-    def retrieve_data(path: str):
-        """Given a filename (path) retrieve its content and transform it into courses"""
-        project_courses = {}
-
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-
-            for project in data:
-                project_courses[project] = list(map(Course.from_dict, data[project]))
-
-        return project_courses
-
     def execute(self, data, _logger: Logger):
         today_date = datetime.today()
         next_month_date = today_date + relativedelta.relativedelta(months=1)
@@ -88,16 +66,6 @@ class GradesParseOperation(Operation):
             return False
 
         return True
-
-    def save_data(self, data, path: str):
-        with open(f"{path}.json", "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=2)
-
-    @staticmethod
-    def retrieve_data(path: str):
-        """Given a filename (path) retrieve its content"""
-        with open(path, "r", encoding="utf-8") as f:
-            return f.read()
 
     def execute(self, data, _logger: Logger):
         parser = GradesParser()

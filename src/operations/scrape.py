@@ -21,18 +21,14 @@ class CalendarScrapeOperation(Operation):
     def validate(self, _data) -> bool:
         return True
 
-    def save_data(self, data, path: str):
-        with open(f"{path}.json", "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=2)
-
     def execute(self, _data, logger: Logger):
-        # Initialize the scrapper
+        # Initialize the scraper
         scraper = CalendarScraper(USERNAME, PASSWORD, logger)
 
         # Initalize the returned data dictionnary
         projects_html = {p: [[], []] for p in self.projects}
 
-        # This loop is used because we run the scrapper twice
+        # This loop is used because we run the scraper twice
         # (one for the current month and another time for the next month)
         for i in range(2):
             scraped_html = scraper.scrape(self.projects)
@@ -58,10 +54,6 @@ class GradesScrapeOperation(Operation):
     def validate(self, _data) -> bool:
         return True
 
-    def save_data(self, data, path: str):
-        with open(f"{path}.json", "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=2)
-
     def execute(self, _data, logger: Logger):
         scraper = GradesScraper(self.username, self.password, logger)
         html = scraper.scrape(self.path_name)
@@ -80,10 +72,6 @@ class PathNamesScrapeOperation(Operation):
 
     def validate(self, _data) -> bool:
         return True
-
-    def save_data(self, data, path: str):
-        with open(f"{path}.json", "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=2)
 
     def execute(self, _data, logger: Logger):
         scraper = PathNamesScraper(self.username, self.password, logger)

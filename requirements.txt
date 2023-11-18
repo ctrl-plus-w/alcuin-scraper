@@ -1,10 +1,6 @@
-flask
-icalendar
 selenium
 bs4
 python-dotenv
-enlighten
-PyGithub
-pyvirtualdisplay
 supabase
 pychalk
+pytz

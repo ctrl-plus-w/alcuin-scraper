@@ -25,17 +25,12 @@ class Operation:
         """Execute the operation"""
         return 1
 
-    def save_data(self, _data, _path: str):
-        """Save the data returned by the execute method"""
-        return ""
-
-    def invoke(self, data, logger: Logger, logs_directory: str):
+    def invoke(self, data, logger: Logger):
         """Invoke the operation: check the validity of the passed data, execute the method and save the data"""
         if not self.validate(data):
             raise ValidationException
 
         data = self.execute(data, logger)
-        self.save_data(data, f"{logs_directory}/{self.name}")
         return data
 
     def __eq__(self, op):

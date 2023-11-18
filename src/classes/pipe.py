@@ -31,7 +31,7 @@ class Pipe:
             op_logger_name = f"{self.logger.name}/{operation.name}"
             op_logger = Logger(op_logger_name, self.logger.filename)
 
-            return operation.invoke(self.data, op_logger, self.logs_directory)
+            return operation.invoke(self.data, op_logger)
         except ValidationException:
             self.logger.error(
                 f"The data received for the operation {operation.name} is invalid."

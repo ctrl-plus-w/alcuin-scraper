@@ -1,4 +1,6 @@
 """Scrape calendars command module"""
+from datetime import datetime
+
 from src.classes.logger import Logger
 from src.classes.pipe import Pipe
 
@@ -7,13 +9,20 @@ from src.operations.scrape import CalendarScrapeOperation
 from src.operations.parse import CalendarParseOperation
 from src.operations.backup import BackupOperation
 
+from src.util import slugify, create_directory
+
 from src.constants.main import PROJECTS
 
 
 def run_scrape_calendars_command(logger: Logger, set_finished):
     """Run the retrieve path names command"""
     logs_directory = "/".join(logger.filename.split("/")[:-1])
-    backup_file = logs_directory.replace("logs", "backups")
+
+    dt_directory = slugify(str(datetime.now()).split(".", maxsplit=1)[0])
+    backup_directory = f"backups/{dt_directory}"
+    create_directory(backup_directory)
+
+    backup_file = f"{backup_directory}/backup.json"
 
     args = (logger, logs_directory, backup_file)
     start_scrape_calendars_pipe(*args)

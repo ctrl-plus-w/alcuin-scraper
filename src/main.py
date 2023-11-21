@@ -121,7 +121,7 @@ def commands_runner(queue: Queue, logger: Logger):
             process.start()
             process.join()
 
-            msg = f"Finished the process with the command id '{item['id']}'."
+            msg = f"Finished the process with the command id '{item['id']}' (exit code: {process.exitcode})."
             logger.info(chalk.cyan(chalk.bold(msg)))
 
 

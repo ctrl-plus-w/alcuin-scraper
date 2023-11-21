@@ -115,7 +115,8 @@ def commands_runner(queue: Queue, logger: Logger):
             logger.info(chalk.cyan(chalk.bold(msg)))
 
             args = (item, logger)
-            process = Process(target=run_command, args=args)
+            name = "command_runner_process"
+            process = Process(target=run_command, args=args, name=name)
 
             process.start()
             process.join()
@@ -141,8 +142,11 @@ def main():
     msg = "Launching the main process : API Process, Runner Process"
     logger.info(chalk.bold(chalk.red(msg)))
 
-    api_process = Process(target=api_checker, args=args)
-    runner_process = Process(target=commands_runner, args=args)
+    name = "api_checker_process"
+    api_process = Process(target=api_checker, args=args, name=name)
+
+    name = "commands_runner_process"
+    runner_process = Process(target=commands_runner, args=args, name=name)
 
     processes = [api_process, runner_process]
 

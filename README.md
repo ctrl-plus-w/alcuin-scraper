@@ -30,6 +30,8 @@ Cette partie de l’application est développée en python et exécutée dans un
 
 Le scraper est la partie de l’application responsable de la récupération et du téléchargement (vers la bdd) des données. Les données en question étant les « calendriers » soit les cours et les notes des élèves.
 
+![Scraper Architecture](readme-assets/scraper-architecture.webp)
+
 ## Fonctionnement Haut Niveau
 Le fonctionnement du scraper se découpe en deux partie, celle-ci correspond au niveau de gestion haut niveau, c’est-à-dire la gestion de la queue et des commandes.
 

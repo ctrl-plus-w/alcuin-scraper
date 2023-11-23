@@ -32,11 +32,12 @@ def api_checker(queue: Queue, logger: Logger):
     Check every minute if some items have been added to the
     queue and add them if it's not the case
     """
-    supabase = create_client(SUPABASE_URL, SERVICE_ROLE_KEY)
 
     added_queue_items_id = []
 
     while True:
+        supabase = create_client(SUPABASE_URL, SERVICE_ROLE_KEY)
+
         req = supabase.table("queue").select("*").eq("finished", False)
         sb_queue_items = req.execute().data
 

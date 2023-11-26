@@ -6,6 +6,7 @@ from datetime import datetime
 
 from multiprocessing import Process, Queue
 from supabase import create_client
+from httpx import ConnectTimeout
 
 import chalk
 
@@ -36,24 +37,28 @@ def api_checker(queue: Queue, logger: Logger):
     added_queue_items_id = []
 
     while True:
-        supabase = create_client(SUPABASE_URL, SERVICE_ROLE_KEY)
+        try:
+            supabase = create_client(SUPABASE_URL, SERVICE_ROLE_KEY)
 
-        req = supabase.table("queue").select("*").eq("finished", False)
-        sb_queue_items = req.execute().data
+            req = supabase.table("queue").select("*").eq("finished", False)
+            sb_queue_items = req.execute().data
 
-        # Only keep the queue items that didn't got added yet
-        sb_queue_items = _f(
-            lambda i: not i["id"] in added_queue_items_id, sb_queue_items
-        )
+            # Only keep the queue items that didn't got added yet
+            sb_queue_items = _f(
+                lambda i: not i["id"] in added_queue_items_id, sb_queue_items
+            )
 
-        if len(sb_queue_items) > 0:
-            msg = f"Retrieved {len(sb_queue_items)} items."
-            logger.info(chalk.red(chalk.bold(msg)))
+            if len(sb_queue_items) > 0:
+                msg = f"Retrieved {len(sb_queue_items)} items."
+                logger.info(chalk.red(chalk.bold(msg)))
 
-        # Add all the items to the queue
-        for queue_item in sb_queue_items:
-            queue.put(queue_item)
-            added_queue_items_id.append(queue_item["id"])
+            # Add all the items to the queue
+            for queue_item in sb_queue_items:
+                queue.put(queue_item)
+                added_queue_items_id.append(queue_item["id"])
+        except ConnectTimeout:
+            msg = "Could not connect to the database (timeout error)."
+            logger.info(chalk.bold(chalk.red(msg)))
 
         sleep(60)
 

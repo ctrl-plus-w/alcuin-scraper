@@ -56,8 +56,8 @@ def api_checker(queue: Queue, logger: Logger):
             for queue_item in sb_queue_items:
                 queue.put(queue_item)
                 added_queue_items_id.append(queue_item["id"])
-        except ConnectTimeout:
-            msg = "Could not connect to the database (timeout error)."
+        except Exception as e:
+            msg = f"Could not connect to the database ({e})."
             logger.info(chalk.bold(chalk.red(msg)))
 
         sleep(60)

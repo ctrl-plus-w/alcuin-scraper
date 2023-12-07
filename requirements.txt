@@ -5,3 +5,5 @@ supabase
 pychalk
 pytz
 httpx
+pycryptodome
+Crypto

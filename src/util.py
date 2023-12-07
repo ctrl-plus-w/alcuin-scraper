@@ -1,7 +1,9 @@
 """Utils module"""
-
+from Crypto.PublicKey import RSA
+from Crypto.Cipher import PKCS1_OAEP
+from base64 import b64decode
 from datetime import datetime
-from typing import Callable, Iterable, TypeVar, Any, Iterator
+from typing import Callable, Iterable, TypeVar, Any, Iterator, List
 
 import re
 import os
@@ -43,12 +45,12 @@ def compare_dates_with_timezone(date_str1: str, date_str2: str):
 
     # Compare the year, month, day, hour, and minute, while considering timezones
     return (
-        date1.year == date2.year
-        and date1.month == date2.month
-        and date1.day == date2.day
-        and date1.hour == date2.hour
-        and date1.minute == date2.minute
-        and date1.utcoffset() == date2.utcoffset()
+            date1.year == date2.year
+            and date1.month == date2.month
+            and date1.day == date2.day
+            and date1.hour == date2.hour
+            and date1.minute == date2.minute
+            and date1.utcoffset() == date2.utcoffset()
     )
 
 
@@ -84,12 +86,20 @@ _T = TypeVar("_T")
 _S = TypeVar("_S")
 
 
-def _f(__function: Callable[[_T], Any], __iterable: Iterable[_T]) -> Iterator[_T]:
+def _f(__function: Callable[[_T], Any], __iterable: Iterable[_T]) -> list[_T]:
     return list(filter(__function, __iterable))
 
 
-def _m(
-    __func: Callable[..., _S],
-    *iterables: Iterable[Any],
-) -> Iterator[_S]:
+def _m(__func: Callable[..., _S], *iterables: Iterable[Any]) -> list[_S]:
     return list(map(__func, *iterables))
+
+
+def decrypt_password(encrypted_password: str, private_key: str) -> str:
+    """Decrypt the password from the database given a secret key."""
+    key = RSA.import_key(private_key)
+    cipher = PKCS1_OAEP.new(key)
+
+    encrypted_text = b64decode(encrypted_password)
+    decrypted_data = cipher.decrypt(encrypted_text)
+
+    return decrypted_data.decode('utf-8', errors='replace')

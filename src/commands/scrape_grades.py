@@ -8,17 +8,23 @@ from src.operations.supabase_upload import GradesSupabaseUploadOperation
 from src.operations.scrape import GradesScrapeOperation
 from src.operations.parse import GradesParseOperation
 
+from src.util import decrypt_password
+
+from src.constants.credentials import RSA_PRIVATE_KEY
+
 
 def run_scrape_grades_command(logger: Logger, user, set_finished):
     """Run the scrape grades command"""
 
-    if not "alcuin_password" in user:
+    if "alcuin_password" not in user:
         msg = "! Missing alcuin password on the user profile."
         logger.info(chalk.bold(chalk.red(msg)))
         set_finished(msg)
         return
 
-    if not "path_name" in user:
+    user["alcuin_password"] = decrypt_password(user["alcuin_password"], RSA_PRIVATE_KEY)
+
+    if "path_name" not in user:
         msg = "! Missing path name on the user profile."
         logger.info(chalk.bold(chalk.red(msg)))
         set_finished(msg)
@@ -37,12 +43,12 @@ def run_scrape_grades_command(logger: Logger, user, set_finished):
 
 
 def start_scrape_grades_pipe(
-    logger: Logger,
-    logs_directory: str,
-    username: str,
-    email: str,
-    password: str,
-    path_name: str,
+        logger: Logger,
+        logs_directory: str,
+        username: str,
+        email: str,
+        password: str,
+        path_name: str,
 ):
     """Create an start the scrape grades pipe"""
     pipe = Pipe(logger, logs_directory)

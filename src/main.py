@@ -6,7 +6,6 @@ from datetime import datetime
 
 from multiprocessing import Process, Queue
 from supabase import create_client
-from httpx import ConnectTimeout
 
 import chalk
 
@@ -17,11 +16,9 @@ from src.commands.scrape_path_names import run_scrape_path_names_command
 from src.commands.scrape_grades import run_scrape_grades_command
 from src.commands.scrape_calendars import run_scrape_calendars_command
 
-
 from src.util import _f, slugify, create_directory
 
 from src.constants.credentials import SUPABASE_URL, SERVICE_ROLE_KEY
-
 
 logging.getLogger("supabase").setLevel(logging.WARNING)
 logging.getLogger("httpx").setLevel(logging.WARNING)
@@ -60,18 +57,18 @@ def api_checker(queue: Queue, logger: Logger):
             msg = f"Could not connect to the database ({e})."
             logger.info(chalk.bold(chalk.red(msg)))
 
-        sleep(60)
+        sleep(10)
 
 
 def run_command(item, logger: Logger):
-    """Run a command from the item dictionnary"""
+    """Run a command from the item dictionary"""
     logger.info(chalk.yellow(f"Running command {item['command']} "))
 
     def set_finished(message: str = None):
         """Set the queue item as finished"""
         args = {"finished": True, "message": message}
-        req = supabase.table("queue").update(args).eq("id", item["id"])
-        req.execute()
+        req1 = supabase.table("queue").update(args).eq("id", item["id"])
+        req1.execute()
 
     supabase = create_client(SUPABASE_URL, SERVICE_ROLE_KEY)
 

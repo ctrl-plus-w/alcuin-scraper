@@ -18,7 +18,7 @@ from src.commands.scrape_calendars import run_scrape_calendars_command
 
 from src.util import _f, slugify, create_directory
 
-from src.constants.credentials import SUPABASE_URL, SERVICE_ROLE_KEY
+from src.constants.credentials import SUPABASE_URL, SERVICE_ROLE_KEY, RSA_PRIVATE_KEY
 
 logging.getLogger("supabase").setLevel(logging.WARNING)
 logging.getLogger("httpx").setLevel(logging.WARNING)
@@ -37,7 +37,7 @@ def api_checker(queue: Queue, logger: Logger):
         try:
             supabase = create_client(SUPABASE_URL, SERVICE_ROLE_KEY)
 
-            req = supabase.table("queue").select("*").eq("finished", False)
+            req = supabase.table("queue").select("*").eq("finished", False).order('created_at', desc=False)
             sb_queue_items = req.execute().data
 
             # Only keep the queue items that didn't got added yet
@@ -69,6 +69,9 @@ def run_command(item, logger: Logger):
         args = {"finished": True, "message": message}
         req1 = supabase.table("queue").update(args).eq("id", item["id"])
         req1.execute()
+
+        if message is not None:
+            logger.info(chalk.bold(chalk.red(message)))
 
     supabase = create_client(SUPABASE_URL, SERVICE_ROLE_KEY)
 
@@ -103,7 +106,8 @@ def run_command(item, logger: Logger):
 
         set_finished("! Invalid user password.")
 
-        return
+    except Exception as e:
+        set_finished(f"! {str(e)}")
 
 
 def commands_runner(queue: Queue, logger: Logger):

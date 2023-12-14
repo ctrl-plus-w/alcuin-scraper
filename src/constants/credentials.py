@@ -15,3 +15,5 @@ assert USERNAME != "" and USERNAME is not None, "Missing ALCUIN_USERNAME env var
 assert PASSWORD != "" and PASSWORD is not None, "Missing ALCUIN_PASSWORD env variable"
 assert SERVICE_ROLE_KEY != "" and SERVICE_ROLE_KEY is not None, "Missing SERVICE_ROLE_KEY env variable"
 assert RSA_PRIVATE_KEY != "" and RSA_PRIVATE_KEY is not None, "Missing RSA_PRIVATE_KEY env variable"
+
+RSA_PRIVATE_KEY = '\n'.join(RSA_PRIVATE_KEY.split('\n'))

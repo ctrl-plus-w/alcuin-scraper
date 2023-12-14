@@ -3,15 +3,12 @@ from datetime import datetime
 
 from src.classes.logger import Logger
 from src.classes.pipe import Pipe
-
-from src.operations.supabase_upload import CalendarSupabaseUploadOperation
-from src.operations.scrape import CalendarScrapeOperation
-from src.operations.parse import CalendarParseOperation
-from src.operations.backup import BackupOperation
-
-from src.util import slugify, create_directory
-
 from src.constants.main import PROJECTS
+from src.operations.backup import BackupOperation
+from src.operations.parse import CalendarParseOperation
+from src.operations.scrape import CalendarScrapeOperation
+from src.operations.supabase_upload import CalendarSupabaseUploadOperation
+from src.util import slugify, create_directory
 
 
 def run_scrape_calendars_command(logger: Logger, set_finished):
@@ -31,9 +28,9 @@ def run_scrape_calendars_command(logger: Logger, set_finished):
 
 
 def start_scrape_calendars_pipe(
-    logger: Logger,
-    logs_directory: str,
-    backup_file: str,
+        logger: Logger,
+        logs_directory: str,
+        backup_file: str,
 ):
     """Create and start the scrape calendars pipe"""
     projects = list(PROJECTS.keys())

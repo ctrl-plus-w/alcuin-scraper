@@ -18,8 +18,9 @@ def main():
     # Initialize the logger and the pipe
     logger = Logger("WORKER", f"{logs_directory}/logs.txt")
 
-    def set_finished(msg: str):
-        logger.info(chalk.bold(chalk.red(msg)))
+    def set_finished(msg: str = None):
+        if msg:
+            logger.info(chalk.bold(chalk.red(msg)))
 
     run_scrape_calendars_command(logger, set_finished)
 

@@ -152,7 +152,7 @@ dans le fichier `.env.example`) :
   API")
 - `SERVICE_ROLE_KEY` : La clé du rôle de service Supabase (peut être trouvé dans l'onglet "Paramètres du Projet" dans la
   catégorie "API")
-- `RSA_PRIVATE_KEY` : La clée privée pour l'encryptage des mots de passes Alcuin des utilisateurs
+- `RSA_PRIVATE_KEY` : La clée privée pour l'encryptage des mots de passes Alcuin des utilisateurs (mettre des `\n` pour les retours à la ligne)
 
 # Exécution
 
@@ -167,3 +167,14 @@ Le fichier `main.py` permet d'exécuter le service global du scraper. Si vous so
 pipe de scrape des calendriers, vous pouvez exécuter le fichier `main__scrape_calendars.py`. Enfin, le
 fichier `main__scrape_grades.py` permet d'exécuter une fois la pipe de récupération des notes d'un utilisateur dont
 l'email sera spécifié en paramètre d'appel du script.
+
+# Maintenance
+
+Les sélecteurs de calendriers de promotion changeant chaque année, il est nécessaire des les mettre à jour à chaque 
+début d'année (dans le fichier `src/constants/main.py`). Pour récupérer l'objet des projets, il suffit d'exécuter le 
+script suivant dans la console sur la page "Votre agenda" d'Alcuin :
+
+```javascript 
+console.log('{\n' + Array.from(document.querySelector('#DivCal > table > tbody > tr:nth-child(4) > td > table > tbody').children).map((el) => `    "${el.innerText.trim().replace('é', 'e').toUpperCase().replace(/[^a-zA-Z0-9.]/g, '_')}": "${el.querySelector('td').attributes['onclick'].nodeValue.split(';')[0].slice(8, -2)}"`).join(`,\n`) + '\n}');
+```
+

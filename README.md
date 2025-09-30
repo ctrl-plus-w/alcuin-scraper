@@ -175,6 +175,6 @@ début d'année (dans le fichier `src/constants/main.py`). Pour récupérer l'ob
 script suivant dans la console sur la page "Votre agenda" d'Alcuin :
 
 ```javascript 
-console.log('{\n' + Array.from(document.querySelector('#DivCal > table > tbody > tr:nth-child(4) > td > table > tbody').children).map((el) => `    "${el.innerText.trim().replace('é', 'e').toUpperCase().replace(/[^a-zA-Z0-9.]/g, '_')}": "${el.querySelector('td').attributes['onclick'].nodeValue.split(';')[0].slice(8, -2)}"`).join(`,\n`) + '\n}');
+document.querySelector('frame[name="content"]').contentWindow.DivSelCal();console.log('{\n' + Array.from(document.querySelector('frame[name="content"]').contentWindow.document.querySelector('#DivCal > table > tbody > tr:nth-child(4) > td > table > tbody').children).map((el) => `    "${el.innerText.trim().replace('é', 'e').toUpperCase().replace(/[^a-zA-Z0-9.]/g, '_')}": "${el.querySelector('td').attributes['onclick'].nodeValue.split(';')[0].slice(8, -2)}"`).join(`,\n`) + '\n}');
 ```
 

@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM python:3.9-slim
 
 RUN apt update 
 RUN apt install vim unzip wget curl libgl1-mesa-glx sudo chromium chromium-driver -y
@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD ["python3", "-m", "src.main"]
+CMD ["python3", "-m", "src.main__scrape_calendars"]

@@ -1,9 +1,11 @@
-selenium
-bs4
-python-dotenv
-supabase
+selenium~=4.21.0
+bs4~=0.0.2
+python-dotenv~=1.0.1
+supabase~=2.4.6
 pychalk
-pytz
+pytz~=2024.1
 httpx
 pycryptodome
-Crypto
+Crypto~=1.4.1
+beautifulsoup4~=4.12.3
+python-dateutil~=2.9.0.post0

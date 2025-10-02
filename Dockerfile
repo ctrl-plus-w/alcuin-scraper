@@ -1,7 +1,7 @@
 FROM python:3.9-slim
 
 RUN apt update 
-RUN apt install vim unzip wget curl libgl1-mesa-glx sudo chromium chromium-driver -y
+RUN apt install vim unzip wget curl libgl1 libglx-mesa0 sudo chromium chromium-driver -y
 
 WORKDIR /usr/local/alcuin-scraper
 
@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD ["python3", "-m", "src.main__scrape_calendars"]
+CMD ["python3", "-m", "src.main"]

@@ -157,7 +157,7 @@ dans le fichier `.env.example`) :
 # Exécution
 
 Pour exécuter le project sous docker, vous pouvez exécuter la commande
-suivante : `docker run --detach ctrlplus/open-alcuin-interface` (après avoir généré l'image). Sinon, vous pouvez
+suivante : `docker run --detach ctrlplusw/open-alcuin-interface` (après avoir généré l'image). Sinon, vous pouvez
 exécuter un des fichiers mains en tant que module avec la commande suivante : `python3 -m src.main`.
 
 À noter que si vous spécifiez le drapeau `--dev` lors de l'exécution du script, celui-ci s'exécutera avec Firefox et non
